@@ -163,7 +163,7 @@ export default function AssistantVideoEditorJobsPage() {
           <div className="relative overflow-hidden rounded-sm bg-primary px-8 py-12 lg:px-16 lg:py-16">
             <div className="mx-auto max-w-4xl text-center">
               <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl">
-                Can't Find the Right Position?
+                Can&apos;t Find the Right Position?
               </h2>
               <p className="mb-8 text-base text-white/80 lg:text-lg">
                 Browse other job categories or set up job alerts to be notified when new positions become available.

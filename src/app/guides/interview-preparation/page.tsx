@@ -32,7 +32,7 @@ export default function InterviewPreparationPage() {
               </span>
             </h1>
             <p className="mb-8 text-base text-body-color dark:text-body-color-dark md:text-lg max-w-3xl mx-auto leading-relaxed">
-              We're working hard to create a comprehensive guide to help you ace your assistant video editor job interviews. 
+                              We&apos;re working hard to create a comprehensive guide to help you ace your assistant video editor job interviews. 
               This resource will include interview questions, preparation strategies, and expert tips.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -72,7 +72,7 @@ export default function InterviewPreparationPage() {
                 Coming Soon!
               </h2>
               <p className="text-lg text-body-color dark:text-body-color-dark">
-                We're building something amazing for you
+                We&apos;re building something amazing for you
               </p>
             </div>
             
@@ -85,7 +85,7 @@ export default function InterviewPreparationPage() {
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-sm font-bold mt-1">1</div>
                   <div>
                     <h4 className="font-medium text-black dark:text-white">Common Interview Questions</h4>
-                    <p className="text-sm text-body-color dark:text-body-color-dark">Technical and behavioral questions you'll likely face</p>
+                    <p className="text-sm text-body-color dark:text-body-color-dark">Technical and behavioral questions you&apos;ll likely face</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -114,10 +114,10 @@ export default function InterviewPreparationPage() {
 
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
               <h3 className="mb-3 text-lg font-semibold text-black dark:text-white">
-                Get Notified When It's Ready
+                Get Notified When It&apos;s Ready
               </h3>
               <p className="text-body-color dark:text-body-color-dark mb-4">
-                We'll let you know as soon as this comprehensive interview guide is available
+                We&apos;ll let you know as soon as this comprehensive interview guide is available
               </p>
               <Link
                 href="/contact"

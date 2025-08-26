@@ -86,7 +86,7 @@ export default function FreelanceVsFulltimePage() {
                   Introduction
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                  One of the most important decisions you'll face as an assistant video editor is whether to pursue 
+                  One of the most important decisions you&apos;ll face as an assistant video editor is whether to pursue 
                   a freelance career or seek full-time employment. Both paths offer unique advantages and challenges, 
                   and the right choice depends on your personal circumstances, career goals, and lifestyle preferences.
                 </p>
@@ -471,7 +471,7 @@ export default function FreelanceVsFulltimePage() {
                   Conclusion
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  There's no universally "right" choice between freelance and full-time work as an assistant video editor. 
+                  There&apos;s no universally &quot;right&quot; choice between freelance and full-time work as an assistant video editor. 
                   The best path depends on your individual circumstances, goals, and preferences. Consider starting with 
                   full-time employment to build foundational skills and industry connections, then evaluate whether 
                   freelancing aligns with your evolving career goals. Remember that you can always change paths as your 
@@ -513,7 +513,7 @@ export default function FreelanceVsFulltimePage() {
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 8 years of experience in the video editing industry, Emily has worked both as a 
-                      full-time editor for major studios and as a successful freelancer. She's an Adobe Certified 
+                      full-time editor for major studios and as a successful freelancer. She&apos;s an Adobe Certified 
                       Professional and member of the Video Editing Association, specializing in helping video editors 
                       navigate career transitions and make informed decisions about their professional paths.
                     </p>

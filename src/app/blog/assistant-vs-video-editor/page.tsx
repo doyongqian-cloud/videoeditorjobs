@@ -56,7 +56,7 @@ const AssistantVsVideoEditor = () => {
               <h3>Career Stage</h3>
               <p>
                 Assistant video editor is typically an entry-level or early-career position that serves as 
-                a stepping stone to becoming a full video editor. It's ideal for recent graduates or 
+                a stepping stone to becoming a full video editor. It&apos;s ideal for recent graduates or 
                 individuals transitioning into video editing from other fields.
               </p>
 
@@ -185,7 +185,7 @@ const AssistantVsVideoEditor = () => {
 
               <h2>Making the Transition</h2>
               
-              <h3>When You're Ready</h3>
+              <h3>When You&apos;re Ready</h3>
               <ul>
                 <li>Consistently produce high-quality work</li>
                 <li>Take initiative on projects and show leadership</li>
@@ -212,7 +212,7 @@ const AssistantVsVideoEditor = () => {
                 goals.
               </p>
               <p>
-                Whether you're starting as an assistant or advancing to an editor role, focus on continuous 
+                Whether you&apos;re starting as an assistant or advancing to an editor role, focus on continuous 
                 learning, building strong relationships, and developing both technical and creative skills. 
                 The video editing industry offers diverse opportunities for growth and advancement for 
                 dedicated professionals.

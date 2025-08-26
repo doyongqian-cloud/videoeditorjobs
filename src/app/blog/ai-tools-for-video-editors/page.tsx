@@ -55,7 +55,7 @@ const AIToolsForVideoEditors = () => {
                 <li><strong>Motion Tracking:</strong> Advanced AI-powered tracking algorithms</li>
               </ul>
 
-              <h3>CapCut (TikTok's Video Editor)</h3>
+              <h3>CapCut (TikTok&apos;s Video Editor)</h3>
               <ul>
                 <li><strong>Auto Captions:</strong> AI-generated subtitles in multiple languages</li>
                 <li><strong>Smart Effects:</strong> AI-powered visual effects and transitions</li>
@@ -278,7 +278,7 @@ const AIToolsForVideoEditors = () => {
                 the video editing industry.
               </p>
               <p>
-                Whether you're just starting your video editing career or are an experienced professional, 
+                Whether you&apos;re just starting your video editing career or are an experienced professional, 
                 AI tools offer exciting opportunities to enhance your skills, improve your workflow, 
                 and create more compelling content. Start exploring these tools today to stay ahead 
                 of the curve and unlock new creative possibilities.

@@ -42,7 +42,7 @@ const FreeEditingSoftware = () => {
                 <li>4K and 8K video support</li>
               </ul>
               <p>
-                <strong>Why it's great:</strong> DaVinci Resolve is the industry standard for color grading 
+                <strong>Why it&apos;s great:</strong> DaVinci Resolve is the industry standard for color grading 
                 and offers professional features that rival paid software. The free version includes most 
                 features needed for serious video editing.
               </p>
@@ -62,7 +62,7 @@ const FreeEditingSoftware = () => {
                 <li>Video stabilization</li>
               </ul>
               <p>
-                <strong>Why it's great:</strong> OpenShot is perfect for beginners who want to learn 
+                <strong>Why it&apos;s great:</strong> OpenShot is perfect for beginners who want to learn 
                 video editing fundamentals without overwhelming complexity.
               </p>
 
@@ -81,7 +81,7 @@ const FreeEditingSoftware = () => {
                 <li>No import required (native editing)</li>
               </ul>
               <p>
-                <strong>Why it's great:</strong> Shotcut offers a good balance between features and 
+                <strong>Why it&apos;s great:</strong> Shotcut offers a good balance between features and 
                 usability, with excellent format support and no import/export restrictions.
               </p>
 
@@ -100,7 +100,7 @@ const FreeEditingSoftware = () => {
                 <li>Hardware acceleration</li>
               </ul>
               <p>
-                <strong>Why it's great:</strong> VSDC offers advanced features typically found in 
+                <strong>Why it&apos;s great:</strong> VSDC offers advanced features typically found in 
                 paid software, making it excellent for Windows users who want professional capabilities.
               </p>
 
@@ -119,7 +119,7 @@ const FreeEditingSoftware = () => {
                 <li>Customizable interface</li>
               </ul>
               <p>
-                <strong>Why it's great:</strong> Kdenlive is a powerful open-source editor that 
+                <strong>Why it&apos;s great:</strong> Kdenlive is a powerful open-source editor that 
                 provides professional features while maintaining an active community for support.
               </p>
 

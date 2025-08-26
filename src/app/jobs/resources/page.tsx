@@ -413,7 +413,7 @@ export default function JobResourcesPage() {
                 </div>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
                   Building relationships within the industry often leads to opportunities that 
-                  aren't publicly advertised. These platforms facilitate professional connections.
+                  aren&apos;t publicly advertised. These platforms facilitate professional connections.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
@@ -518,7 +518,7 @@ export default function JobResourcesPage() {
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                   The key to finding great assistant video editor opportunities is diversifying your approach 
                   across multiple platforms while building a strong professional presence. Focus on platforms that 
-                  align with your career goals, whether that's full-time employment, freelance work, or remote opportunities. 
+                  align with your career goals, whether that&apos;s full-time employment, freelance work, or remote opportunities. 
                   Remember that the best opportunities often come from a combination of active job searching and 
                   passive networking within the industry.
                 </p>
@@ -559,7 +559,7 @@ export default function JobResourcesPage() {
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 10 years of experience in the video editing industry, Sarah has worked with 
                       major platforms including YouTube, Netflix, and independent production companies. 
-                      She's an Adobe Certified Professional and member of the Video Editing Association, 
+                      She&apos;s an Adobe Certified Professional and member of the Video Editing Association, 
                       specializing in helping video editors navigate their career paths and find the best opportunities.
                     </p>
                   </div>

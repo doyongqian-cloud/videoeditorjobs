@@ -29,7 +29,7 @@ const HowToBecome = () => {
             <div className="prose prose-lg max-w-none">
               <h2>Step 1: Education & Training</h2>
               <p>
-                While formal education isn't always required, consider pursuing:
+                While formal education isn&apos;t always required, consider pursuing:
               </p>
               <ul>
                 <li>Film or media production degree</li>

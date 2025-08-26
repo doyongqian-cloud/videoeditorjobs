@@ -32,7 +32,7 @@ export default function ProjectManagementToolsPage() {
               </span>
             </h1>
             <p className="mb-8 text-base text-body-color dark:text-body-color-dark md:text-lg max-w-3xl mx-auto leading-relaxed">
-              We're working hard to create a comprehensive guide to project management tools for video editors. 
+              We&apos;re working hard to create a comprehensive guide to project management tools for video editors. 
               This resource will help you streamline your workflow and boost productivity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -72,7 +72,7 @@ export default function ProjectManagementToolsPage() {
                 Coming Soon!
               </h2>
               <p className="text-lg text-body-color dark:text-body-color-dark">
-                We're building something amazing for you
+                We&apos;re building something amazing for you
               </p>
             </div>
             
@@ -114,10 +114,10 @@ export default function ProjectManagementToolsPage() {
 
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
               <h3 className="mb-3 text-lg font-semibold text-black dark:text-white">
-                Get Notified When It's Ready
+                Get Notified When It&apos;s Ready
               </h3>
               <p className="text-body-color dark:text-body-color-dark mb-4">
-                We'll let you know as soon as this comprehensive project management guide is available
+                We&apos;ll let you know as soon as this comprehensive project management guide is available
               </p>
               <Link
                 href="/contact"

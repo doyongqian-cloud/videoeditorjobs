@@ -114,7 +114,7 @@ export default function PaidEditingToolsPage() {
 
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
               <h3 className="mb-3 text-lg font-semibold text-black dark:text-white">
-                Get Notified When It's Ready
+                Get Notified When It&apos;s Ready
               </h3>
               <p className="text-body-color dark:text-body-color-dark mb-4">
                 We will let you know as soon as this comprehensive tool guide is available

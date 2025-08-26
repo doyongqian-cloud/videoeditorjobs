@@ -54,7 +54,7 @@ const ResumePortfolio = () => {
               <ul>
                 <li>List relevant work experience in reverse chronological order</li>
                 <li>Use action verbs to describe your responsibilities</li>
-                <li>Quantify achievements when possible (e.g., "Edited 50+ videos")</li>
+                <li>Quantify achievements when possible (e.g., &quot;Edited 50+ videos&quot;)</li>
                 <li>Focus on video editing and post-production tasks</li>
               </ul>
 
@@ -94,7 +94,7 @@ const ResumePortfolio = () => {
 
               <h3>Project Descriptions</h3>
               <ul>
-                <li>Explain the project's purpose and goals</li>
+                <li>Explain the project&apos;s purpose and goals</li>
                 <li>Describe your specific role and contributions</li>
                 <li>Mention challenges overcome and solutions implemented</li>
                 <li>Include client feedback or results when available</li>

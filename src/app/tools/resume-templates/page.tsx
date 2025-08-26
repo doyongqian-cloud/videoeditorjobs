@@ -86,7 +86,7 @@ const ResumeTemplates = () => {
               <h3>Header Section</h3>
               <ul>
                 <li><strong>Name:</strong> Large, prominent display</li>
-                <li><strong>Title:</strong> "Assistant Video Editor" or similar</li>
+                <li><strong>Title:</strong> &quot;Assistant Video Editor&quot; or similar</li>
                 <li><strong>Contact:</strong> Email, phone, location</li>
                 <li><strong>Portfolio:</strong> Website, Vimeo, LinkedIn links</li>
               </ul>
@@ -200,7 +200,7 @@ const ResumeTemplates = () => {
                 A well-designed resume is your first impression with potential employers. Choose a template 
                 that reflects your personal style while maintaining professionalism. Remember to customize 
                 each resume for specific job applications and keep your portfolio updated with your latest work. 
-                With the right template and content, you'll be well-positioned to land your next assistant 
+                With the right template and content, you&apos;ll be well-positioned to land your next assistant 
                 video editor role.
               </p>
             </div>

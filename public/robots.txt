@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# 禁止爬取管理页面和API
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /node_modules/
+
+# 允许爬取所有其他页面
+Allow: /about
+Allow: /blog
+Allow: /guides
+Allow: /jobs
+Allow: /tools
+Allow: /contact
+
+# 网站地图位置
+Sitemap: https://assistantvideoeditor.com/sitemap.xml
+
+# 爬取延迟（可选，避免对服务器造成压力）
+Crawl-delay: 1

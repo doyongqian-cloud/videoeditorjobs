@@ -570,49 +570,7 @@ export default function SalaryCareerPage() {
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 12 years of experience in the video editing industry, Michael has worked with 
                       major studios including Netflix, Warner Bros., and independent production companies. 
-                      He's an Adobe Certified Professional and member of the Video Editing Association.
-                    </p>
-                  </div>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm">
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Experience</div>
-                      <div className="text-gray-600 dark:text-gray-400">12+ years</div>
-                    </div>
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Certifications</div>
-                      <div className="text-gray-600 dark:text-gray-400">Adobe Certified Pro</div>
-                    </div>
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Specialties</div>
-                      <div className="text-gray-600 dark:text-gray-400">Career Guidance</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Author Information */}
-      <section className="py-16 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-        <div className="container">
-          <div className="mx-auto max-w-4xl">
-            <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-8 border border-gray-200 dark:border-gray-600">
-              <div className="flex items-start space-x-6">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-3xl">👨‍💻</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-black dark:text-white mb-3">About the Author</h3>
-                  <div className="mb-4">
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
-                      <strong>Michael Rodriguez</strong> - Senior Video Editor & Career Consultant
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      With over 12 years of experience in the video editing industry, Michael has worked with 
-                      major studios including Netflix, Warner Bros., and independent production companies. 
-                      He's an Adobe Certified Professional and member of the Video Editing Association.
+                      He&apos;s an Adobe Certified Professional and member of the Video Editing Association.
                     </p>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">

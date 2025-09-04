@@ -99,7 +99,7 @@ export default function SkillsPage() {
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                   Based on analysis of 500+ assistant video editor job postings from top companies, 
-                  we've identified the essential skills that employers prioritize. These skills are 
+                  we&apos;ve identified the essential skills that employers prioritize. These skills are 
                   categorized into technical, creative, and soft skills, each with specific importance 
                   ratings and learning recommendations.
                 </p>

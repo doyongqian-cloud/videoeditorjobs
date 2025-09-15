@@ -32,9 +32,9 @@ export default function ProjectManagementToolsPage() {
               </span>
             </h1>
             <p className="mb-8 text-base text-body-color dark:text-body-color-dark md:text-lg max-w-3xl mx-auto leading-relaxed">
-              We&apos;re working hard to create a comprehensive guide to project management tools for video editors. 
-              This resource will help you streamline your workflow and boost productivity.
-            </p>
+                We&apos;re working hard to create a comprehensive guide to project management tools for video editors. 
+                This resource will help you streamline your workflow and boost productivity.
+              </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/tools"

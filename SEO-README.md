@@ -37,10 +37,10 @@ npm run sitemap
 ### 方法1: Google Search Console
 1. 访问 [Google Search Console](https://search.google.com/search-console)
 2. 添加您的网站
-3. 在"网站地图"部分提交 `https://assistantvideoeditor.com/sitemap.xml`
+3. 在"网站地图"部分提交 `https://assistvideoeditorjobs.com/sitemap.xml`
 
 ### 方法2: 直接提交
-访问: `https://www.google.com/ping?sitemap=https://assistantvideoeditor.com/sitemap.xml`
+访问: `https://www.google.com/ping?sitemap=https://assistvideoeditorjobs.com/sitemap.xml`
 
 ## 📊 页面优先级设置
 
@@ -59,7 +59,7 @@ npm run sitemap
 
 ## 🌐 域名配置
 
-**重要**: 请将 `scripts/generate-sitemap.js` 中的域名从 `assistantvideoeditor.com` 更改为您的实际域名。
+**重要**: 请将 `scripts/generate-sitemap.js` 中的域名从 `assistvideoeditorjobs.com` 更改为您的实际域名。
 
 ## 📈 SEO 最佳实践
 

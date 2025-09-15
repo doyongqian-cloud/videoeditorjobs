@@ -70,4 +70,4 @@ We welcome contributions from the Assistant Video Editor community! Please feel 
 
 ## 📞 Support
 
-For support, email us at support@assistantvideoeditor.com or visit our website.
+For support, email us at support@assistvideoeditorjobs.com or visit our website.

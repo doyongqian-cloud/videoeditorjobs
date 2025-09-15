@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <link rel="canonical" href="https://assistantvideoeditor.com" />
+        <link rel="canonical" href="https://assistvideoeditorjobs.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -65,16 +65,16 @@ export default function RootLayout({
               "@type": "WebSite",
               "name": "Assistant Video Editor",
               "description": "The premier platform for Assistant Video Editor careers. Find jobs, learn skills, access tools, and grow your video editing career with expert guidance.",
-              "url": "https://assistantvideoeditor.com",
+              "url": "https://assistvideoeditorjobs.com",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://assistantvideoeditor.com/search?q={search_term_string}",
+                "target": "https://assistvideoeditorjobs.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               },
               "publisher": {
                 "@type": "Organization",
                 "name": "Assistant Video Editor",
-                "url": "https://assistantvideoeditor.com"
+                "url": "https://assistvideoeditorjobs.com"
               }
             })
           }}

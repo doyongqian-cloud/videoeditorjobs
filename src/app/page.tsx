@@ -70,8 +70,8 @@ export default function Home() {
             "@type": "Organization",
             "name": "Assistant Video Editor",
             "description": "The premier platform for Assistant Video Editor careers",
-            "url": "https://assistantvideoeditor.com",
-            "logo": "https://assistantvideoeditor.com/images/logo/logo.svg",
+            "url": "https://assistvideoeditorjobs.com",
+            "logo": "https://assistvideoeditorjobs.com/images/logo/logo.svg",
             "sameAs": [
               "https://twitter.com/assistantvideoeditor",
               "https://github.com/assistantvideoeditor"
@@ -79,7 +79,7 @@ export default function Home() {
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer service",
-              "email": "support@assistantvideoeditor.com"
+              "email": "support@assistvideoeditorjobs.com"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",

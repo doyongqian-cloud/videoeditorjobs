@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // 网站配置
-const SITE_URL = 'https://assistantvideoeditor.com';
+const SITE_URL = 'https://assistvideoeditorjobs.com';
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 
 // 页面配置

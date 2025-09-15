@@ -8,7 +8,12 @@ import { Providers } from "./providers";
 import Script from "next/script";
 import "../styles/index.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+});
 
 export default function RootLayout({
   children,
@@ -18,31 +23,16 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Assistant Video Editor",
-              "description": "The premier platform for Assistant Video Editor careers. Find jobs, learn skills, access tools, and grow your video editing career with expert guidance.",
-              "url": "https://assistantvideoeditor.com",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://assistantvideoeditor.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "name": "Assistant Video Editor",
-                "url": "https://assistantvideoeditor.com"
-              }
-            })
-          }}
-        />
+        <link rel="canonical" href="https://assistantvideoeditor.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#4a6cf7" />
+        <link rel="preload" href="/images/logo/logo.svg" as="image" type="image/svg+xml" />
       </head>
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`} suppressHydrationWarning>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-VZZMFQ9BWE"
@@ -63,6 +53,32 @@ export default function RootLayout({
           <Footer />
           <ScrollToTop />
         </Providers>
+        
+        {/* JSON-LD Schema - Load after interactive to avoid blocking */}
+        <Script
+          id="json-ld-schema"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Assistant Video Editor",
+              "description": "The premier platform for Assistant Video Editor careers. Find jobs, learn skills, access tools, and grow your video editing career with expert guidance.",
+              "url": "https://assistantvideoeditor.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://assistantvideoeditor.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Assistant Video Editor",
+                "url": "https://assistantvideoeditor.com"
+              }
+            })
+          }}
+        />
       </body>
     </html>
   );

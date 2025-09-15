@@ -4,21 +4,16 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Freelance vs Full-time | Assistant Video Editor",
+  title: "Freelance vs Full-Time Assistant Video Editing",
   description:
-    "Compare freelance and full-time career paths for assistant video editors. Understand the pros, cons, and choose the right direction for your career goals.",
+    "Compare freelance vs full-time assistant video editor jobs. Discover pros, cons, salary differences, and which career path is right for you.",
   keywords: [
     ...siteConfig.keywords,
-    "freelance video editor",
-    "full-time video editor",
-    "video editing career paths",
-    "freelance vs employment",
-    "video editing work styles",
-    "career choice video editing",
+    "freelance vs full-time assistant video editor jobs",
   ],
   openGraph: {
-    title: "Freelance vs Full-time | Assistant Video Editor",
-    description: "Compare freelance and full-time career paths for assistant video editors.",
+    title: "Freelance vs Full-Time Assistant Video Editing",
+    description: "Compare freelance vs full-time assistant video editor jobs: pros, cons, and salary differences.",
     url: "https://assistantvideoeditor.com/jobs/freelance-vs-fulltime",
     type: "article",
   },

@@ -3,12 +3,16 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Entry Level Assistant Video Editor Jobs - Start Your Career",
-  description: "Find entry-level assistant video editor positions and learn how to start your career in video editing. Perfect for beginners and recent graduates.",
-  keywords: [...siteConfig.keywords, "entry level", "assistant video editor", "junior positions", "career start"],
+  title: "Entry-Level Assistant Video Editor Jobs",
+  description: "Explore entry-level assistant video editor jobs. Learn how to start your editing career with no experience and land your first job in 2025.",
+  keywords: [
+    ...siteConfig.keywords,
+    "entry level assistant video editor jobs",
+    "junior assistant video editor",
+  ],
   openGraph: {
-    title: "Entry Level Assistant Video Editor Jobs - Start Your Career",
-    description: "Find entry-level assistant video editor positions and learn how to start your career in video editing. Perfect for beginners and recent graduates.",
+    title: "Entry-Level Assistant Video Editor Jobs",
+    description: "Explore entry-level assistant video editor jobs. Learn how to start your editing career with no experience and land your first job in 2025.",
     url: "https://yourdomain.com/jobs/entry-level-assistant-video-editor",
     type: "website",
   },
@@ -182,7 +186,7 @@ export default function EntryLevelAssistantVideoEditorPage() {
                     {resource.description}
                   </p>
                   <div className="mt-6 flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
-                    Learn More
+                    Learn about this resource
                     <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

@@ -4,9 +4,9 @@ import { blogPosts } from "@/data/site-content";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Blog - Industry Insights & Career Tips",
-  description: "Stay updated with the latest trends, tips, and insights for assistant video editors. Expert advice on career growth, tools, and industry developments.",
-  keywords: [...siteConfig.keywords, "blog", "insights", "tips", "industry trends"],
+  title: "Assistant Video Editor Blog 2025 | Career Tips, Industry News & Expert Insights",
+  description: "Expert insights for assistant video editors: career growth tips, industry trends, tool reviews, and job market updates. Stay ahead in your video editing career.",
+  keywords: [...siteConfig.keywords, "blog", "insights", "tips", "industry trends", "career advice", "video editing news", "professional development"],
 };
 
 export default function BlogPage() {
@@ -142,7 +142,7 @@ export default function BlogPage() {
                     href={post.path}
                     className="inline-flex items-center justify-center rounded-sm bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-primary/90"
                   >
-                    Read More
+                    Read this article
                     <svg
                       className="ml-2 h-4 w-4"
                       fill="none"

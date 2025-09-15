@@ -75,27 +75,21 @@ export const guideCategories: GuideCategory[] = [
   },
 ];
 
-export const toolCategories: ToolCategory[] = [
+// Video Editing Tools
+export const videoEditingTools: ToolCategory[] = [
   {
     id: "free-editing-software",
-    title: "Best Free Editing Software",
-    description: "Top free video editing software for beginners and professionals",
+    title: "Free Editing Software",
+    description: "Professional-grade free video editing software with direct download links",
     path: "/tools/free-editing-software",
     isFree: true,
   },
   {
     id: "paid-editing-tools",
-    title: "Paid Editing Tools",
-    description: "Professional video editing software and tools for advanced users",
+    title: "Professional Software",
+    description: "Industry-standard video editing software and professional tools",
     path: "/tools/paid-editing-tools",
     isFree: false,
-  },
-  {
-    id: "resume-templates",
-    title: "Resume Templates",
-    description: "Professional resume templates designed for video editors",
-    path: "/tools/resume-templates",
-    isFree: true,
   },
   {
     id: "project-management-tools",
@@ -105,6 +99,34 @@ export const toolCategories: ToolCategory[] = [
     isFree: false,
   },
 ];
+
+// Career Tools
+export const careerTools: ToolCategory[] = [
+  {
+    id: "ai-resume-builder",
+    title: "AI Resume Builder",
+    description: "Generate professional resumes tailored for video editor positions using AI",
+    path: "/tools/ai-resume-builder",
+    isFree: true,
+  },
+  {
+    id: "resume-templates",
+    title: "Resume Templates",
+    description: "Download professional templates designed specifically for video editors",
+    path: "/tools/resume-templates",
+    isFree: true,
+  },
+  {
+    id: "cover-letter-generator",
+    title: "Cover Letter Generator",
+    description: "AI-powered cover letter creation for video editor job applications",
+    path: "/tools/cover-letter-generator",
+    isFree: true,
+  },
+];
+
+// Legacy export for backward compatibility
+export const toolCategories: ToolCategory[] = [...videoEditingTools, ...careerTools];
 
 export const blogPosts: BlogPost[] = [
   {

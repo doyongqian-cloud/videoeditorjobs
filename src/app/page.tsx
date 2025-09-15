@@ -15,10 +15,11 @@ import ToolsPreview from "@/components/ToolsPreview";
 // import CTA from "@/components/CTA";
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import FAQSchema from "@/components/FAQ/FAQSchema";
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
-  description: siteConfig.description,
+  title: "Assistant Video Editor Jobs & Career Guide 2025 | Find Your Next Opportunity",
+  description: "Discover assistant video editor jobs, career guides, and essential tools. Find freelance, remote, and entry-level positions. Start your video editing career today with expert guidance.",
   keywords: siteConfig.keywords,
   openGraph: {
     title: siteConfig.name,
@@ -42,6 +43,21 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
   },
 };
+
+const homeFAQs = [
+  {
+    question: "How long does it take to become an assistant video editor?",
+    answer: "Most people can land their first assistant video editor job within 2-4 months of focused learning and practice using our structured guides and tools."
+  },
+  {
+    question: "Do I need expensive equipment to start?",
+    answer: "No! You can start with just a computer and free editing software. We provide a complete list of free tools to get you started."
+  },
+  {
+    question: "Can I work remotely as an assistant video editor?",
+    answer: "Yes! 85% of assistant video editor positions offer remote work options, making it perfect for flexible work arrangements."
+  }
+];
 
 export default function Home() {
   return (
@@ -98,12 +114,12 @@ export default function Home() {
           })
         }}
       />
+      <FAQSchema faqs={homeFAQs} />
       <ScrollUp />
       <Hero />
-      {/* <Features /> */}
-      <JobPreview />
       <GuidesPreview />
       <ToolsPreview />
+      <JobPreview />
       {/* <CTA /> */}
       {/* <Video /> */}
       {/* <Brands /> */}

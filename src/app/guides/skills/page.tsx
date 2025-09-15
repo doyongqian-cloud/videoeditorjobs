@@ -3,19 +3,16 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Essential Skills for Assistant Video Editors | Career Guide",
+  title: "Assistant Video Editor Skills You Need",
   description: "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor. Complete skill breakdown with industry data.",
   keywords: [
     ...siteConfig.keywords,
-    "video editing skills",
-    "assistant editor skills",
-    "video editing software",
-    "creative skills",
-    "technical skills",
+    "assistant video editor skills",
+    "required skills",
   ],
   openGraph: {
-    title: "Essential Skills for Assistant Video Editors",
-    description: "Complete guide to mastering the skills needed for a successful video editing career.",
+    title: "Assistant Video Editor Skills You Need",
+    description: "Discover the top skills required to become an assistant video editor. Technical and soft skills explained.",
     url: "https://assistantvideoeditor.com/guides/skills",
     type: "article",
   },

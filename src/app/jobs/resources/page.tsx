@@ -4,21 +4,18 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Top Job Platforms 2025 | Assistant Video Editor",
+  title: "Assistant Video Editor Resources",
   description:
-    "Discover the best websites, platforms, and resources to find assistant video editor opportunities in 2025. Comprehensive guide to job hunting platforms.",
+    "Access essential assistant video editor resources: resume tips, job boards, cover letter examples, and career-building tools.",
   keywords: [
     ...siteConfig.keywords,
-    "assistant video editor jobs",
-    "video editing job platforms",
-    "job hunting websites",
-    "freelance video editing",
-    "remote video editor jobs",
-    "video editing career sites",
+    "assistant video editor resources",
+    "job boards",
+    "resume tips",
   ],
   openGraph: {
-    title: "Top Job Platforms 2025 | Assistant Video Editor",
-    description: "Best job hunting platforms and resources for assistant video editors in 2025.",
+    title: "Assistant Video Editor Resources",
+    description: "Essential resources for assistant video editors: job boards, resume tips, and tools.",
     url: "https://assistantvideoeditor.com/jobs/resources",
     type: "article",
   },

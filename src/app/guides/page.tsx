@@ -4,9 +4,9 @@ import { guideCategories } from "@/data/site-content";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Guides - Learn Everything You Need to Know",
-  description: "Comprehensive guides on becoming an assistant video editor, essential skills, resume tips, and interview preparation. Start your career journey today.",
-  keywords: [...siteConfig.keywords, "career guide", "skills", "resume", "interview"],
+  title: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
+  description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+  keywords: [...siteConfig.keywords, "career guide", "skills", "resume", "interview", "professional development", "video editing career", "job preparation"],
 };
 
 export default function GuidesPage() {

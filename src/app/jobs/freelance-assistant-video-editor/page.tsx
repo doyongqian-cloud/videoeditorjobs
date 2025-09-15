@@ -3,12 +3,16 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Freelance Assistant Video Editor Opportunities",
-  description: "Discover freelance opportunities and projects for assistant video editors. Find clients, build your portfolio, and grow your freelance career.",
-  keywords: [...siteConfig.keywords, "freelance assistant video editor", "freelance video editing", "video editing projects", "remote video editing work"],
+  title: "Freelance Assistant Video Editor Jobs",
+  description: "Discover freelance assistant video editor jobs. Find contract gigs, remote projects, and build your portfolio while working from anywhere.",
+  keywords: [
+    ...siteConfig.keywords,
+    "freelance assistant video editor jobs",
+    "contract assistant video editor",
+  ],
   openGraph: {
-    title: "Freelance Assistant Video Editor Opportunities",
-    description: "Find freelance projects and clients as an assistant video editor. Build your portfolio and grow your freelance career.",
+    title: "Freelance Assistant Video Editor Jobs",
+    description: "Discover freelance assistant video editor jobs. Find contract gigs, remote projects, and build your portfolio while working from anywhere.",
     url: "https://assistantvideoeditor.com/jobs/freelance-assistant-video-editor",
     type: "website",
   },
@@ -123,7 +127,7 @@ export default function FreelanceAssistantVideoEditorPage() {
                 href="/guides/how-to-become"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transition-all duration-300"
               >
-                Learn More
+                Learn how to become an assistant video editor
               </Link>
             </div>
           </div>

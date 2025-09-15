@@ -11,28 +11,86 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Find Your Dream{" "}
-                  <span className="text-primary"> Video Editor</span> Job
+                {/* Badge */}
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary/10 to-blue-500/10 px-6 py-3 text-sm font-medium text-primary border border-primary/20">
+                  <span className="text-lg">🎬</span>
+                  <span>Start Your Video Editing Career</span>
+                </div>
+
+                {/* Main Heading */}
+                <h1 className="mb-6 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Master Video Editing, <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">Land Your Dream Job</span>
                 </h1>
-                <p className="mb-12 text-base leading-relaxed! text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Discover hundreds of Video Editor opportunities, from entry-level positions 
-                  to senior roles. Get expert career guidance, learn essential Video Editor skills, 
-                  and find the perfect tools to advance your Video Editor career.
+
+                {/* Subtitle */}
+                <p className="mb-8 text-lg leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl md:text-2xl max-w-4xl mx-auto">
+                  Get expert guidance, professional tools, and job opportunities to launch your video editing career
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="/jobs"
-                    className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
-                    Browse Jobs
-                  </Link>
+
+                {/* Stats Grid */}
+                <div className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-3 max-w-2xl mx-auto">
+                  <div className="group flex flex-col items-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300">
+                    <div className="mb-2 text-3xl">📈</div>
+                    <div className="text-2xl font-bold text-primary mb-1">35%</div>
+                    <div className="text-sm text-body-color dark:text-body-color-dark text-center">Job Growth Rate</div>
+                  </div>
+                  <div className="group flex flex-col items-center p-6 rounded-xl bg-gradient-to-br from-green-50 to-emerald-100 dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300">
+                    <div className="mb-2 text-3xl">💰</div>
+                    <div className="text-2xl font-bold text-primary mb-1">$75K+</div>
+                    <div className="text-sm text-body-color dark:text-body-color-dark text-center">Average Salary</div>
+                  </div>
+                  <div className="group flex flex-col items-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-violet-100 dark:from-gray-800 dark:to-gray-700 hover:shadow-lg transition-all duration-300">
+                    <div className="mb-2 text-3xl">🌍</div>
+                    <div className="text-2xl font-bold text-primary mb-1">85%</div>
+                    <div className="text-sm text-body-color dark:text-body-color-dark text-center">Remote Jobs</div>
+                  </div>
+                </div>
+                {/* Action Buttons */}
+                <div className="mb-8 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
                   <Link
                     href="/guides"
-                    className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
+                    className="group relative inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-primary to-blue-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                   >
-                    Career Guide
+                    <span className="mr-2 text-lg">🎯</span>
+                    Learn Skills
+                    <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </Link>
+                  <Link
+                    href="/tools"
+                    className="group relative inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-gray-900 to-black px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 dark:from-white/10 dark:to-white/5 dark:hover:from-white/20 dark:hover:to-white/10"
+                  >
+                    <span className="mr-2 text-lg">⚡</span>
+                    Get Tools
+                    <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/jobs"
+                    className="group relative inline-flex items-center justify-center rounded-xl border-2 border-primary px-8 py-4 text-base font-semibold text-primary hover:bg-primary hover:text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <span className="mr-2 text-lg">💼</span>
+                    Find Jobs
+                    <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+
+                {/* Social Proof */}
+                <div className="flex items-center justify-center space-x-8 text-sm text-body-color dark:text-body-color-dark">
+                  <div className="flex items-center">
+                    <div className="mr-3 flex -space-x-2">
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 border-2 border-white dark:border-gray-800"></div>
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-r from-green-400 to-green-600 border-2 border-white dark:border-gray-800"></div>
+                      <div className="h-8 w-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 border-2 border-white dark:border-gray-800"></div>
+                    </div>
+                    <span>
+                      <span className="font-semibold text-primary">10,000+</span> successful editors
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

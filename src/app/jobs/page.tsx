@@ -4,15 +4,17 @@ import { jobCategories } from "@/data/site-content";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs - Find Your Next Opportunity",
+  title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
   description:
-    "Browse assistant video editor jobs, freelance opportunities, remote positions, and entry-level roles. Start your video editing career today.",
+    "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor jobs",
     "remote video editing jobs",
     "freelance assistant editor",
     "career opportunities",
+    "video editing careers",
+    "entry level video editor jobs",
   ],
   openGraph: {
     title: "Assistant Video Editor Jobs - Start Your Career",
@@ -125,7 +127,7 @@ export default function JobsPage() {
                     {resource.description}
                   </p>
                   <div className="mt-6 flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
-                    Learn More
+                    Learn about this resource
                     <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

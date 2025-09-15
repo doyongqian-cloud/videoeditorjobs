@@ -2,8 +2,12 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume & Portfolio Tips for Assistant Video Editor | Assistant Video Editor Jobs",
-  description: "Expert tips for creating compelling resumes and portfolios that will help you land assistant video editor jobs.",
+  title: "Assistant Video Editor Resume & Portfolio Guide",
+  description: "Build a strong assistant video editor resume and portfolio with examples, templates, and best practices.",
+  keywords: [
+    "assistant video editor resume examples",
+    "assistant video editor portfolio tips",
+  ],
 };
 
 const ResumePortfolio = () => {

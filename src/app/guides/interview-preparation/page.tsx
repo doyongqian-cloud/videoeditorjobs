@@ -3,12 +3,12 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Interview Preparation - Assistant Video Editor Guide",
-  description: "Prepare for assistant video editor job interviews with expert tips and strategies. Coming soon with comprehensive interview guidance.",
-  keywords: [...siteConfig.keywords, "interview preparation", "job interview", "career tips"],
+  title: "Assistant Video Editor Interview Prep",
+  description: "Prepare for assistant video editor interviews with common questions, sample answers, and expert tips.",
+  keywords: [...siteConfig.keywords, "assistant video editor interview questions"],
   openGraph: {
-    title: "Interview Preparation - Assistant Video Editor Guide",
-    description: "Prepare for assistant video editor job interviews with expert tips and strategies. Coming soon with comprehensive interview guidance.",
+    title: "Assistant Video Editor Interview Prep",
+    description: "Prepare for assistant video editor interviews with common questions, sample answers, and expert tips.",
     url: "https://assistantvideoeditor.com/guides/interview-preparation",
     type: "website",
   },

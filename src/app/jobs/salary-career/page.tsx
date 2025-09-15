@@ -4,21 +4,18 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Salary & Career Growth | Assistant Video Editor",
+  title: "Assistant Video Editor Salary & Career Path",
   description:
-    "Discover comprehensive salary insights, career progression paths, and earning potential for assistant video editors across different countries and experience levels.",
+    "Learn about assistant video editor salaries, career growth, and how much you can earn in 2025 across freelance, entry-level, and senior roles.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor salary",
-    "video editing career growth",
-    "video editor earnings",
-    "freelance video editor rates",
-    "video editing career path",
-    "assistant editor salary guide",
+    "career path",
+    "average pay",
   ],
   openGraph: {
-    title: "Salary & Career Growth | Assistant Video Editor",
-    description: "Comprehensive salary guide and career growth insights for assistant video editors worldwide.",
+    title: "Assistant Video Editor Salary & Career Path",
+    description: "Learn about assistant video editor salaries, career growth, and earnings in 2025 across roles.",
     url: "https://assistantvideoeditor.com/jobs/salary-career",
     type: "article",
   },

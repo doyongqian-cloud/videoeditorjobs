@@ -3,9 +3,13 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs - Full-Time Positions",
-  description: "Browse full-time assistant video editor positions at top companies and studios. Find your next career opportunity in video editing.",
-  keywords: [...siteConfig.keywords, "full-time jobs", "video editing positions"],
+  title: "Assistant Video Editor Jobs (2025)",
+  description: "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities. Start your video editing career today.",
+  keywords: [
+    ...siteConfig.keywords,
+    "assistant video editor jobs",
+    "video editor assistant jobs",
+  ],
 };
 
 // Mock job data

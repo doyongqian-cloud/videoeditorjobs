@@ -191,14 +191,14 @@ const HowToBecome = () => {
             <h2 className="mb-6 text-3xl font-bold text-black dark:text-white lg:text-4xl">FAQ</h2>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 rounded-xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-dark">
               {[{
-                q: "需要学位才能入行吗？",
-                a: "不必须。体系化的课程与项目作品更重要；Bootcamp、在线课程也能快速起步。",
+                q: "Do I need a degree to enter the field?",
+                a: "Not necessarily. Structured courses and project work are more important; bootcamps and online courses can also help you get started quickly.",
               }, {
-                q: "应该先学哪款软件？",
-                a: "Premiere Pro 或 DaVinci Resolve 都可；熟悉代理编辑、转码与交付流程更关键。",
+                q: "Which software should I learn first?",
+                a: "Either Premiere Pro or DaVinci Resolve works well; what's more crucial is understanding proxy editing, transcoding, and delivery workflows.",
               }, {
-                q: "作品集做多少合适？",
-                a: "建议 3–5 个项目，覆盖不同题材，展示组织能力、组装与交付能力。",
+                q: "How many projects should be in my portfolio?",
+                a: "We recommend 3-5 projects covering different genres, demonstrating your organizational skills, assembly abilities, and delivery capabilities.",
               }].map((item, idx) => (
                 <details key={idx} className="p-5">
                   <summary className="cursor-pointer font-medium text-black dark:text-white">{item.q}</summary>
@@ -219,10 +219,10 @@ const HowToBecome = () => {
                 <div>
                   <h3 className="text-2xl font-bold text-black dark:text-white mb-2">Quick Start Checklist</h3>
                   <ul className="text-sm text-body-color dark:text-body-color-dark grid gap-2 md:grid-cols-2">
-                    <li>掌握一款主流 NLE 与代理编辑流程</li>
-                    <li>搭建清晰文件结构与版本命名</li>
-                    <li>完成 3–5 个可展示的项目</li>
-                    <li>准备简历与 1 页作品说明</li>
+                    <li>Master a mainstream NLE and proxy editing workflow</li>
+                    <li>Set up clear file structures and version naming</li>
+                    <li>Complete 3-5 showcase projects</li>
+                    <li>Prepare resume and a 1-page portfolio description</li>
                   </ul>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-3 justify-end">

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Assistant Video Editor Salary & Career Path",
     description: "Learn about assistant video editor salaries, career growth, and earnings in 2025 across roles.",
-    url: "https://assistantvideoeditor.com/jobs/salary-career",
+    url: "https://assistvideoeditorjobs.com/jobs/salary-career",
     type: "article",
   },
 };

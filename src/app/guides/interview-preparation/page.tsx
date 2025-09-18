@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Assistant Video Editor Interview Prep",
     description: "Prepare for assistant video editor interviews with common questions, sample answers, and expert tips.",
-    url: "https://assistantvideoeditor.com/guides/interview-preparation",
+    url: "https://assistvideoeditorjobs.com/guides/interview-preparation",
     type: "website",
   },
 };

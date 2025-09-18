@@ -1,15 +1,44 @@
 import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs (2025)",
-  description: "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities. Start your video editing career today.",
+  title: "Assistant Video Editor Jobs (2025) | Remote, Entry-Level & Freelance Positions",
+  description: "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities. Updated daily with salary info and career guidance. Start your video editing career today.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor jobs",
     "video editor assistant jobs",
+    "entry level video editor jobs",
+    "remote video editing jobs",
+    "freelance video editor jobs",
+    "video editing careers",
+    "post production jobs"
   ],
+  openGraph: {
+    title: "Assistant Video Editor Jobs (2025) - Find Your Next Opportunity",
+    description: "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities. Start your video editing career today.",
+    url: "https://assistvideoeditorjobs.com/jobs/assistant-video-editor-jobs",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Jobs - Find Your Next Opportunity"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Jobs (2025) - Find Your Next Opportunity",
+    description: "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/jobs/assistant-video-editor-jobs"
+  }
 };
 
 // Mock job data
@@ -49,6 +78,34 @@ const mockJobs = [
 export default function AssistantVideoEditorJobsPage() {
   return (
     <>
+      <Script
+        id="jobs-page-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "JobPosting",
+            "title": "Assistant Video Editor Jobs",
+            "description": "Find the latest assistant video editor jobs, including entry-level, freelance, and remote opportunities.",
+            "hiringOrganization": {
+              "@type": "Organization",
+              "name": "Assistant Video Editor Jobs Platform"
+            },
+            "jobLocation": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "US"
+              }
+            },
+            "employmentType": ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
+            "workHours": "Flexible",
+            "datePosted": "2025-01-15",
+            "validThrough": "2025-12-31",
+            "url": "https://assistvideoeditorjobs.com/jobs/assistant-video-editor-jobs"
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="pt-32 lg:pt-40">
         <div className="container">
@@ -131,11 +188,13 @@ export default function AssistantVideoEditorJobsPage() {
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <Link
-                      href={`/jobs/assistant-video-editor-jobs/${job.id}`}
+                    <a
+                      href="https://www.indeed.com/q-assistant-video-editor-jobs.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center justify-center rounded-sm bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-primary/90"
                     >
-                      View Details
+                      View on Indeed
                       <svg
                         className="ml-2 h-4 w-4"
                         fill="none"
@@ -146,10 +205,10 @@ export default function AssistantVideoEditorJobsPage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M9 5l7 7-7 7"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                         />
                       </svg>
-                    </Link>
+                    </a>
                     <button className="rounded-sm border border-primary px-6 py-3 text-base font-medium text-primary hover:bg-primary hover:text-white">
                       Quick Apply
                     </button>

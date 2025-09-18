@@ -183,8 +183,8 @@ export default function HelpCenter() {
                     <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
                       Get help via email within 24 hours
                     </p>
-                    <a href="mailto:support@assistantvideoeditor.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-                      support@assistantvideoeditor.com
+                    <a href="mailto:support@assistvideoeditorjobs.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+                      support@assistvideoeditorjobs.com
                     </a>
                   </div>
                   <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">

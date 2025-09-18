@@ -52,3 +52,16 @@ export interface BlogPost {
   readTime?: string;
   tags?: string[];
 }
+
+export interface ResumeTemplate {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  difficulty: "Easy" | "Medium" | "Advanced";
+  fileFormat: "PDF" | "DOCX" | "PSD";
+  downloadUrl: string;
+  previewImage: string;
+  features: string[];
+  isFree: boolean;
+}

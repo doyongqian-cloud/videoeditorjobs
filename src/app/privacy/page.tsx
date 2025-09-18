@@ -296,8 +296,8 @@ export default function PrivacyPolicy() {
                       </svg>
                       <div>
                         <p className="font-semibold text-black dark:text-white">Email</p>
-                        <a href="mailto:privacy@assistantvideoeditor.com" className="text-primary hover:text-primary/80 transition-colors">
-                          privacy@assistantvideoeditor.com
+                        <a href="mailto:privacy@assistvideoeditorjobs.com" className="text-primary hover:text-primary/80 transition-colors">
+                          privacy@assistvideoeditorjobs.com
                         </a>
                       </div>
                     </div>

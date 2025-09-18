@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Freelance Assistant Video Editor Jobs",
     description: "Discover freelance assistant video editor jobs. Find contract gigs, remote projects, and build your portfolio while working from anywhere.",
-    url: "https://assistantvideoeditor.com/jobs/freelance-assistant-video-editor",
+    url: "https://assistvideoeditorjobs.com/jobs/freelance-assistant-video-editor",
     type: "website",
   },
 };

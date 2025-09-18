@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Assistant Video Editor Resources",
     description: "Essential resources for assistant video editors: job boards, resume tips, and tools.",
-    url: "https://assistantvideoeditor.com/jobs/resources",
+    url: "https://assistvideoeditorjobs.com/jobs/resources",
     type: "article",
   },
 };

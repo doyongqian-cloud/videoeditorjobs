@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Assistant Video Editor Skills You Need",
     description: "Discover the top skills required to become an assistant video editor. Technical and soft skills explained.",
-    url: "https://assistantvideoeditor.com/guides/skills",
+    url: "https://assistvideoeditorjobs.com/guides/skills",
     type: "article",
   },
 };

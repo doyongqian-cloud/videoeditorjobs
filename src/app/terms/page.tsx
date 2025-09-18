@@ -446,8 +446,8 @@ export default function TermsOfService() {
                       </svg>
                       <div>
                         <p className="font-semibold text-black dark:text-white">Email</p>
-                        <a href="mailto:legal@assistantvideoeditor.com" className="text-primary hover:text-primary/80 transition-colors">
-                          legal@assistantvideoeditor.com
+                        <a href="mailto:legal@assistvideoeditorjobs.com" className="text-primary hover:text-primary/80 transition-colors">
+                          legal@assistvideoeditorjobs.com
                         </a>
                       </div>
                     </div>

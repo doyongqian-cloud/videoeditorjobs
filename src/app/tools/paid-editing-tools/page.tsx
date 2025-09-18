@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Paid Editing Tools - Professional Video Editing Software",
     description: "Professional video editing software and tools for advanced users. Coming soon with comprehensive tool reviews and recommendations.",
-    url: "https://assistantvideoeditor.com/tools/paid-editing-tools",
+    url: "https://assistvideoeditorjobs.com/tools/paid-editing-tools",
     type: "website",
   },
 };

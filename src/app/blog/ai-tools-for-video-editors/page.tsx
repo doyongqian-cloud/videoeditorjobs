@@ -1,14 +1,84 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "AI Tools for Video Editors: Revolutionizing Post-Production | Assistant Video Editor Jobs",
-  description: "Discover how AI tools are transforming video editing workflows and helping editors work more efficiently and creatively.",
+  description: "Discover how AI tools are transforming video editing workflows and helping editors work more efficiently and creatively. Complete guide to AI-powered video editing software, tools, and techniques for 2025.",
+  keywords: [
+    "AI tools for video editors",
+    "artificial intelligence video editing",
+    "AI video editing software",
+    "automated video editing",
+    "AI post production tools",
+    "video editing automation",
+    "AI powered editing",
+    "machine learning video editing"
+  ],
+  openGraph: {
+    title: "AI Tools for Video Editors: Revolutionizing Post-Production",
+    description: "Discover how AI tools are transforming video editing workflows and helping editors work more efficiently and creatively.",
+    url: "https://assistvideoeditorjobs.com/blog/ai-tools-for-video-editors",
+    type: "article",
+    publishedTime: "2025-01-15T00:00:00.000Z",
+    modifiedTime: "2025-01-15T00:00:00.000Z",
+    authors: ["Assistant Video Editor Jobs"],
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI Tools for Video Editors - Revolutionizing Post-Production"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Tools for Video Editors: Revolutionizing Post-Production",
+    description: "Discover how AI tools are transforming video editing workflows and helping editors work more efficiently and creatively.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/blog/ai-tools-for-video-editors"
+  }
 };
 
 const AIToolsForVideoEditors = () => {
   return (
     <>
+      <Script
+        id="ai-tools-article-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "AI Tools for Video Editors: Revolutionizing Post-Production",
+            "description": "Discover how AI tools are transforming video editing workflows and helping editors work more efficiently and creatively.",
+            "image": "https://assistvideoeditorjobs.com/og.jpg",
+            "author": {
+              "@type": "Organization",
+              "name": "Assistant Video Editor Jobs"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Assistant Video Editor Jobs",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://assistvideoeditorjobs.com/images/logo/logo.svg"
+              }
+            },
+            "datePublished": "2025-01-15T00:00:00.000Z",
+            "dateModified": "2025-01-15T00:00:00.000Z",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://assistvideoeditorjobs.com/blog/ai-tools-for-video-editors"
+            },
+            "articleSection": "Video Editing Technology",
+            "keywords": "AI tools, video editing, artificial intelligence, post production, automation"
+          })
+        }}
+      />
       <Breadcrumb
         pageName="AI Tools for Video Editors"
         description="How artificial intelligence is revolutionizing video editing workflows"

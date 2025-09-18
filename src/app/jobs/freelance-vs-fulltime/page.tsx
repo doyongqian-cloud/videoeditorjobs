@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Freelance vs Full-Time Assistant Video Editing",
     description: "Compare freelance vs full-time assistant video editor jobs: pros, cons, and salary differences.",
-    url: "https://assistantvideoeditor.com/jobs/freelance-vs-fulltime",
+    url: "https://assistvideoeditorjobs.com/jobs/freelance-vs-fulltime",
     type: "article",
   },
 };

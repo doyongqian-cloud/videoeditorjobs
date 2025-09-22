@@ -3,15 +3,52 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Project Management Tools - Video Editing Workflow",
-  description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",
-  keywords: [...siteConfig.keywords, "project management", "workflow", "productivity tools"],
+  title: "Video Editor Skills Assessment & Check Tool (2025) | Coming Soon",
+  description: "Comprehensive skills assessment tool for assistant video editors. Evaluate your technical skills, creative abilities, and career readiness. Coming soon with detailed skill analysis and improvement recommendations.",
+  keywords: [
+    ...siteConfig.keywords,
+    "video editor skills assessment",
+    "skills check tool",
+    "video editing competency test",
+    "career readiness assessment",
+    "technical skills evaluation",
+    "creative skills test",
+    "video editor skill level"
+  ],
   openGraph: {
-    title: "Project Management Tools - Video Editing Workflow",
-    description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",
-    url: "https://yourdomain.com/tools/project-management-tools",
+    title: "Video Editor Skills Assessment & Check Tool (2025) | Coming Soon",
+    description: "Comprehensive skills assessment tool for assistant video editors. Evaluate your technical skills, creative abilities, and career readiness.",
+    url: "https://assistvideoeditorjobs.com/skill-check",
     type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Video Editor Skills Assessment Tool"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Video Editor Skills Assessment & Check Tool (2025)",
+    description: "Comprehensive skills assessment tool for assistant video editors. Coming soon with detailed skill analysis.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/skill-check"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 export default function ProjectManagementToolsPage() {

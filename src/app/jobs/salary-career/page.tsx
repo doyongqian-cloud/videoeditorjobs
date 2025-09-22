@@ -4,21 +4,54 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Salary & Career Path",
-  description:
-    "Learn about assistant video editor salaries, career growth, and how much you can earn in 2025 across freelance, entry-level, and senior roles.",
+  title: "Assistant Video Editor Salary & Career Growth Guide (2025) | Complete Analysis",
+  description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential, career progression, salary ranges by experience level, location, and industry. Updated with latest market data.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor salary",
-    "career path",
-    "average pay",
+    "video editor salary 2025",
+    "career path video editing",
+    "average pay video editor",
+    "salary expectations",
+    "career growth video editing",
+    "freelance video editor rates",
+    "video editing compensation",
+    "industry salary trends"
   ],
   openGraph: {
-    title: "Assistant Video Editor Salary & Career Path",
-    description: "Learn about assistant video editor salaries, career growth, and earnings in 2025 across roles.",
+    title: "Assistant Video Editor Salary & Career Growth Guide (2025) | Complete Analysis",
+    description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential, career progression, and salary ranges by experience level.",
     url: "https://assistvideoeditorjobs.com/jobs/salary-career",
     type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Salary & Career Growth Guide"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Salary & Career Growth Guide (2025)",
+    description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential and career progression.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/jobs/salary-career"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 // ========== 页面主体 ==========

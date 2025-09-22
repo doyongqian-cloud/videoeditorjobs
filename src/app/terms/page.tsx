@@ -3,9 +3,54 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Assistant Video Editor",
-  description: "Read our terms of service and understand the rules and guidelines for using our assistant video editor job platform.",
-  keywords: ["terms of service", "user agreement", "legal terms", "assistant video editor", "job platform"],
+  title: "Terms of Service | Assistant Video Editor Jobs - Legal Terms (2025)",
+  description: "Read our comprehensive terms of service and understand the rules and guidelines for using our assistant video editor job platform. Updated January 2025 with clear user rights and responsibilities.",
+  keywords: [
+    "terms of service",
+    "user agreement",
+    "legal terms",
+    "assistant video editor",
+    "job platform",
+    "user rights",
+    "platform guidelines",
+    "service terms",
+    "legal agreement",
+    "user responsibilities"
+  ],
+  openGraph: {
+    title: "Terms of Service | Assistant Video Editor Jobs - Legal Terms (2025)",
+    description: "Read our comprehensive terms of service and understand the rules and guidelines for using our assistant video editor job platform.",
+    url: "https://assistvideoeditorjobs.com/terms",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Terms of Service - Assistant Video Editor Jobs"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Assistant Video Editor Jobs - Legal Terms (2025)",
+    description: "Read our comprehensive terms of service and understand the rules and guidelines for using our platform.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/terms"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 export default function TermsOfService() {

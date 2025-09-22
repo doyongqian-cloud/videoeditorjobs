@@ -2,8 +2,53 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Finding Freelance Clients as an Assistant Video Editor | Assistant Video Editor Jobs",
-  description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor, including marketing, networking, and client acquisition techniques.",
+  title: "Finding Freelance Clients as an Assistant Video Editor (2025) | Complete Guide",
+  description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor. Complete guide covering marketing, networking, client acquisition, pricing strategies, and business growth techniques.",
+  keywords: [
+    "finding freelance clients",
+    "freelance video editor clients",
+    "client acquisition strategies",
+    "freelance marketing",
+    "video editor networking",
+    "freelance business growth",
+    "client retention strategies",
+    "freelance pricing",
+    "video editing business"
+  ],
+  openGraph: {
+    title: "Finding Freelance Clients as an Assistant Video Editor (2025) | Complete Guide",
+    description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor. Complete guide covering marketing, networking, and business growth.",
+    url: "https://assistvideoeditorjobs.com/blog/finding-freelance-clients",
+    type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Finding Freelance Clients as an Assistant Video Editor"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Finding Freelance Clients as an Assistant Video Editor (2025)",
+    description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/blog/finding-freelance-clients"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 const FindingFreelanceClients = () => {

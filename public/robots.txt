@@ -1,11 +1,16 @@
 User-agent: *
 Allow: /
 
-# 禁止爬取管理页面和API
+# 禁止爬取技术文件和敏感页面
 Disallow: /api/
 Disallow: /admin/
 Disallow: /_next/
 Disallow: /node_modules/
+Disallow: /dashboard/
+Disallow: /debug-auth/
+Disallow: /onboarding/
+Disallow: /start/
+Disallow: /interview/
 
 # 允许爬取所有其他页面
 Allow: /about
@@ -18,5 +23,5 @@ Allow: /contact
 # 网站地图位置
 Sitemap: https://assistvideoeditorjobs.com/sitemap.xml
 
-# 爬取延迟（可选，避免对服务器造成压力）
+# 爬取延迟（避免对服务器造成压力）
 Crawl-delay: 1

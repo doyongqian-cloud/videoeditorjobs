@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  env: {
+    NEXT_PUBLIC_GA4_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID,
+    NEXT_PUBLIC_GA4_ENABLED: process.env.NEXT_PUBLIC_GA4_ENABLED,
+  },
   images: {
     remotePatterns: [
       {
@@ -27,6 +31,21 @@ const nextConfig = {
   experimental: {
     esmExternals: true,
     optimizeCss: true,
+  },
+  // Redirects for SEO
+  async redirects() {
+    return [
+      {
+        source: '/www/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+      {
+        source: '/www',
+        destination: '/',
+        permanent: true,
+      },
+    ];
   },
   // Headers for better SEO
   async headers() {

@@ -7,7 +7,55 @@ import FAQSchema from "@/components/FAQ/FAQSchema";
 export const metadata: Metadata = {
   title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
   description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
-  keywords: [...siteConfig.keywords, "video editing software", "tools", "resources", "free software", "professional tools", "editing workflow"],
+  keywords: [
+    ...siteConfig.keywords,
+    "video editing software",
+    "tools",
+    "resources",
+    "free software",
+    "professional tools",
+    "editing workflow",
+    "video editor toolkit",
+    "editing software download",
+    "career tools video editor",
+    "professional software",
+    "free editing tools",
+    "video editing resources"
+  ],
+  openGraph: {
+    title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
+    description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
+    url: "https://assistvideoeditorjobs.com/tools",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Best Video Editing Tools 2025 - Complete Toolkit"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
+    description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/tools"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 const toolsFAQs = [

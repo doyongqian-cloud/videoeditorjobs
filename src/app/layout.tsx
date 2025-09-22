@@ -7,6 +7,8 @@ import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import Script from "next/script";
 import "../styles/index.css";
+import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
+import PrivacyConsent from "@/components/Analytics/PrivacyConsent";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -42,25 +44,18 @@ export default function RootLayout({
       </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`} suppressHydrationWarning>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-VZZMFQ9BWE"
-          strategy="afterInteractive"
+        {/* Google Analytics 4 - 优化配置 */}
+        <GoogleAnalytics 
+          measurementId={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-VZZMFQ9BWE'}
+          enabled={process.env.NEXT_PUBLIC_GA4_ENABLED === 'true' && process.env.NODE_ENV === 'production'}
         />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-VZZMFQ9BWE');
-          `}
-        </Script>
         
         <Providers>
           <Header />
           {children}
           <Footer />
           <ScrollToTop />
+          <PrivacyConsent />
         </Providers>
         
         {/* JSON-LD Schema - Load after interactive to avoid blocking */}

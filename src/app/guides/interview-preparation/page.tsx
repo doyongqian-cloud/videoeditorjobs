@@ -3,15 +3,52 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Interview Prep",
-  description: "Prepare for assistant video editor interviews with common questions, sample answers, and expert tips.",
-  keywords: [...siteConfig.keywords, "assistant video editor interview questions"],
+  title: "Assistant Video Editor Interview Preparation Guide (2025) | Coming Soon",
+  description: "Comprehensive interview preparation guide for assistant video editor positions. Learn common questions, portfolio presentation tips, salary negotiation strategies, and follow-up techniques. Coming soon with expert insights.",
+  keywords: [
+    ...siteConfig.keywords,
+    "assistant video editor interview questions",
+    "video editor interview preparation",
+    "interview tips video editing",
+    "portfolio presentation",
+    "salary negotiation video editor",
+    "interview strategies",
+    "career preparation"
+  ],
   openGraph: {
-    title: "Assistant Video Editor Interview Prep",
-    description: "Prepare for assistant video editor interviews with common questions, sample answers, and expert tips.",
+    title: "Assistant Video Editor Interview Preparation Guide (2025) | Coming Soon",
+    description: "Comprehensive interview preparation guide for assistant video editor positions. Learn common questions, portfolio presentation tips, and expert strategies.",
     url: "https://assistvideoeditorjobs.com/guides/interview-preparation",
-    type: "website",
+    type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Interview Preparation Guide"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Interview Preparation Guide (2025)",
+    description: "Comprehensive interview preparation guide for assistant video editor positions. Coming soon with expert insights.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/guides/interview-preparation"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 export default function InterviewPreparationPage() {

@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Assistant Video Editor Professionals and Career Growth."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Empowering Assistant Video Editors with Comprehensive Career Support"
+                paragraph="We're dedicated to connecting talented Assistant Video Editors with the best job opportunities while providing expert guidance, essential tools, and resources to accelerate their career growth in the video editing industry."
                 mb="44px"
               />
 
@@ -35,15 +35,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Expert Career Guidance" />
+                    <List text="Industry-Validated Resources" />
+                    <List text="Professional Development Tools" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Comprehensive Job Listings" />
+                    <List text="Skills Assessment Tools" />
+                    <List text="Community Support Network" />
                   </div>
                 </div>
               </div>

@@ -3,24 +3,105 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Skills You Need",
-  description: "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor. Complete skill breakdown with industry data.",
+  title: "Essential Skills for Assistant Video Editors (2025) | Complete Guide",
+  description: "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor. Complete skill breakdown with industry data from 500+ job postings analysis.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor skills",
-    "required skills",
+    "video editor skills required",
+    "essential skills for video editors",
+    "technical skills video editing",
+    "creative skills video editing",
+    "soft skills video editor",
+    "video editing competencies",
+    "career skills video editor",
+    "professional video editor skills",
+    "video editing job requirements"
   ],
   openGraph: {
-    title: "Assistant Video Editor Skills You Need",
-    description: "Discover the top skills required to become an assistant video editor. Technical and soft skills explained.",
+    title: "Essential Skills for Assistant Video Editors (2025) | Complete Guide",
+    description: "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor. Complete skill breakdown with industry data.",
     url: "https://assistvideoeditorjobs.com/guides/skills",
     type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Essential Skills for Assistant Video Editors - Complete Guide"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Essential Skills for Assistant Video Editors (2025)",
+    description: "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/guides/skills"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  other: {
+    'article:published_time': '2025-01-15T00:00:00.000Z',
+    'article:modified_time': '2025-01-15T00:00:00.000Z',
+    'article:author': 'Assistant Video Editor Jobs',
+    'article:section': 'Career Guide',
+    'article:tag': 'video editing skills, career development, technical skills, creative skills'
+  }
 };
 
 export default function SkillsPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Essential Skills for Assistant Video Editors (2025) | Complete Guide",
+    "description": "Master the essential technical, creative, and soft skills needed to succeed as an assistant video editor. Complete skill breakdown with industry data from 500+ job postings analysis.",
+    "image": "https://assistvideoeditorjobs.com/og.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://assistvideoeditorjobs.com/logo.svg"
+      }
+    },
+    "datePublished": "2025-01-15T00:00:00.000Z",
+    "dateModified": "2025-01-15T00:00:00.000Z",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://assistvideoeditorjobs.com/guides/skills"
+    },
+    "articleSection": "Career Guide",
+    "keywords": "assistant video editor skills, video editing competencies, technical skills, creative skills, soft skills, career development",
+    "about": {
+      "@type": "Thing",
+      "name": "Assistant Video Editor Skills",
+      "description": "Essential skills and competencies required for assistant video editor positions"
+    }
+  };
+
   return (
-    <article className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <article className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/5 via-blue-500/5 to-primary/10 dark:from-primary/10 dark:via-blue-500/10 dark:to-primary/20 pt-24 pb-16 lg:pt-32 lg:pb-20">
         {/* Decorative Elements */}
@@ -581,6 +662,7 @@ export default function SkillsPage() {
           </div>
         </div>
       </section>
-    </article>
+      </article>
+    </>
   );
 }

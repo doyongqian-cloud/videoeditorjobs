@@ -1,4 +1,54 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AI Resume Builder for Assistant Video Editors (2025) | Coming Soon",
+  description: "AI-powered resume builder specifically designed for assistant video editors. Create professional resumes tailored to video editing roles with industry-specific templates and optimization. Coming soon with advanced AI features.",
+  keywords: [
+    "AI resume builder",
+    "video editor resume",
+    "assistant video editor resume",
+    "resume builder AI",
+    "professional resume creator",
+    "video editing resume template",
+    "career resume tool",
+    "resume optimization"
+  ],
+  openGraph: {
+    title: "AI Resume Builder for Assistant Video Editors (2025) | Coming Soon",
+    description: "AI-powered resume builder specifically designed for assistant video editors. Create professional resumes tailored to video editing roles.",
+    url: "https://assistvideoeditorjobs.com/tools/ai-resume-builder",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "AI Resume Builder for Assistant Video Editors"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Resume Builder for Assistant Video Editors (2025)",
+    description: "AI-powered resume builder specifically designed for assistant video editors. Coming soon with advanced features.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/tools/ai-resume-builder"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
+};
 
 export default function ComingSoonResumeBuilder() {
   return (

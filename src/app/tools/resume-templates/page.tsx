@@ -1,15 +1,12 @@
-import { Metadata } from "next";
+'use client';
+
 import { siteConfig } from "@/config/site";
 import { resumeTemplates } from "@/data/site-content";
 import Link from "next/link";
 import Image from "next/image";
 import FAQSchema from "@/components/FAQ/FAQSchema";
-
-export const metadata: Metadata = {
-  title: "Professional Video Editor Resume Templates | Free PDF Downloads",
-  description: "Professional resume templates designed specifically for video editors. Modern, creative, corporate styles available. Free PDF downloads for all templates.",
-  keywords: [...siteConfig.keywords, "resume templates", "video editor resume", "PDF templates", "job application", "professional resume", "video editing career"],
-};
+import { trackResumeDownload, sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
 const resumeFAQs = [
   {
@@ -41,6 +38,56 @@ const categories = [
 ];
 
 export default function ResumeTemplatesPage() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Professional Video Editor Resume Templates | Free PDF Downloads",
+    description: "Professional resume templates designed specifically for video editors. Modern, creative, corporate styles available. Free PDF downloads for all templates.",
+    keywords: [
+      ...siteConfig.keywords,
+      "resume templates",
+      "video editor resume",
+      "PDF templates",
+      "job application",
+      "professional resume",
+      "video editing career"
+    ],
+    ogTitle: "Professional Video Editor Resume Templates | Free PDF Downloads",
+    ogDescription: "Professional resume templates designed specifically for video editors. Modern, creative, corporate styles available. Free PDF downloads for all templates.",
+    ogImage: "https://assistvideoeditorjobs.com/og-resume-templates.jpg",
+    canonical: "https://assistvideoeditorjobs.com/tools/resume-templates"
+  });
+
+  // 跟踪简历下载
+  const handleResumeDownload = (templateTitle: string, templateId: string, fileName: string) => {
+    trackResumeDownload(templateId, fileName);
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'file_download',
+      event_label: templateTitle,
+      element_type: 'resume_template',
+      template_id: templateId,
+      file_name: fileName,
+    });
+  };
+
+  // 跟踪分类筛选
+  const handleCategoryFilter = (categoryName: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'filter_interaction',
+      event_label: categoryName,
+      element_type: 'category_filter',
+      filter_value: categoryName,
+    });
+  };
+
+  // 跟踪预览按钮
+  const handlePreviewClick = (templateTitle: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'template_interaction',
+      event_label: templateTitle,
+      element_type: 'preview_button',
+    });
+  };
+
   return (
     <>
       <FAQSchema faqs={resumeFAQs} />
@@ -90,6 +137,7 @@ export default function ResumeTemplatesPage() {
             {categories.map((category) => (
               <button
                 key={category.id}
+                onClick={() => handleCategoryFilter(category.name)}
                 className="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-primary hover:text-white dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-primary dark:hover:text-white"
               >
                 {category.name} ({category.count})
@@ -182,6 +230,7 @@ export default function ResumeTemplatesPage() {
                     <a
                       href={template.downloadUrl}
                       download
+                      onClick={() => handleResumeDownload(template.title, template.id, `${template.id}.pdf`)}
                       className="flex-1 inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90 transform group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                     >
                       <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -189,7 +238,10 @@ export default function ResumeTemplatesPage() {
                       </svg>
                       Download Template
                     </a>
-                    <button className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors">
+                    <button 
+                      onClick={() => handlePreviewClick(template.title)}
+                      className="px-4 py-2 rounded-lg border border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
+                    >
                       <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />

@@ -1,15 +1,40 @@
-import { Metadata } from "next";
+'use client';
+
 import { siteConfig } from "@/config/site";
 import { guideCategories } from "@/data/site-content";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
-  description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
-  keywords: [...siteConfig.keywords, "career guide", "skills", "resume", "interview", "professional development", "video editing career", "job preparation"],
-};
+import { sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function GuidesPage() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
+    description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+    keywords: [...siteConfig.keywords, "career guide", "skills", "resume", "interview", "professional development", "video editing career", "job preparation"],
+    ogTitle: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
+    ogDescription: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+    ogImage: "https://assistvideoeditorjobs.com/og-guides.jpg",
+    canonical: "https://assistvideoeditorjobs.com/guides"
+  });
+
+  // 跟踪指南页面交互
+  const handleGuideClick = (guideTitle: string, guideCategory: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'guide_interaction',
+      event_label: guideTitle,
+      element_type: 'guide_card',
+      guide_category: guideCategory,
+    });
+  };
+
+  const handleCategoryClick = (categoryName: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'guide_category',
+      event_label: categoryName,
+      element_type: 'category_tab',
+    });
+  };
   return (
     <>
       {/* 1. Hero Section */}

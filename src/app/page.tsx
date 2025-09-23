@@ -1,3 +1,5 @@
+'use client';
+
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
@@ -13,36 +15,10 @@ import JobPreview from "@/components/JobPreview";
 import GuidesPreview from "@/components/GuidesPreview";
 import ToolsPreview from "@/components/ToolsPreview";
 // import CTA from "@/components/CTA";
-import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import FAQSchema from "@/components/FAQ/FAQSchema";
-
-export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs & Career Guide 2025 | Find Your Next Opportunity",
-  description: "Discover assistant video editor jobs, career guides, and essential tools. Find freelance, remote, and entry-level positions. Start your video editing career today with expert guidance.",
-  keywords: siteConfig.keywords,
-  openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
-  },
-};
+import { sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
 const homeFAQs = [
   {
@@ -60,6 +36,34 @@ const homeFAQs = [
 ];
 
 export default function Home() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Assistant Video Editor Jobs & Career Guide 2025 | Find Your Next Opportunity",
+    description: "Discover assistant video editor jobs, career guides, and essential tools. Find freelance, remote, and entry-level positions. Start your video editing career today with expert guidance.",
+    keywords: siteConfig.keywords,
+    ogTitle: siteConfig.name,
+    ogDescription: siteConfig.description,
+    ogImage: siteConfig.ogImage,
+    canonical: siteConfig.url
+  });
+
+  // 跟踪首页关键交互
+  const handleCTAClick = (ctaType: string, ctaText: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'homepage_cta',
+      event_label: ctaText,
+      element_type: 'cta_button',
+      cta_type: ctaType,
+    });
+  };
+
+  const handleSectionClick = (sectionName: string, elementType: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'homepage_section',
+      event_label: sectionName,
+      element_type: elementType,
+    });
+  };
   return (
     <>
       <script

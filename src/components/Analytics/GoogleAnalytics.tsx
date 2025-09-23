@@ -20,8 +20,17 @@ export default function GoogleAnalytics({
   enabled = true 
 }: GoogleAnalyticsProps) {
   useEffect(() => {
+    // 记录GA4配置信息
+    console.log('[GA4] 初始化检查:', {
+      measurementId,
+      enabled,
+      nodeEnv: process.env.NODE_ENV,
+      ga4Enabled: process.env.NEXT_PUBLIC_GA4_ENABLED
+    });
+
     // 在开发环境或禁用时，不执行GA4初始化
     if (!enabled || process.env.NODE_ENV === 'development') {
+      console.log('[GA4] 跳过初始化 - 开发环境或已禁用');
       return;
     }
 
@@ -60,9 +69,9 @@ export default function GoogleAnalytics({
       },
     });
 
-    // 设置隐私友好的配置
+    // 设置默认隐私配置 - 允许分析，拒绝广告
     window.gtag('consent', 'default', {
-      'analytics_storage': 'denied',
+      'analytics_storage': 'granted',
       'ad_storage': 'denied',
       'ad_user_data': 'denied',
       'ad_personalization': 'denied',
@@ -82,10 +91,12 @@ export default function GoogleAnalytics({
         src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
         strategy="afterInteractive"
         onLoad={() => {
-          console.log('GA4 script loaded successfully');
+          console.log('[GA4] 脚本加载成功');
+          console.log('[GA4] gtag函数可用:', typeof window.gtag);
+          console.log('[GA4] dataLayer:', window.dataLayer);
         }}
         onError={() => {
-          console.error('Failed to load GA4 script');
+          console.error('[GA4] 脚本加载失败');
         }}
       />
     </>

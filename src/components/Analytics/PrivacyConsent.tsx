@@ -21,10 +21,14 @@ export default function PrivacyConsent({ onConsentChange }: PrivacyConsentProps)
       setAdsConsent(consent.ads);
       setConsent(consent.analytics, consent.ads);
     } else {
-      // 显示同意横幅
-      setShowBanner(true);
-      // 初始化拒绝所有跟踪
-      initializeConsent();
+      // 默认允许分析，拒绝广告
+      const defaultConsent = { analytics: true, ads: false };
+      localStorage.setItem('ga4-consent', JSON.stringify(defaultConsent));
+      setAnalyticsConsent(true);
+      setAdsConsent(false);
+      setConsent(true, false);
+      // 不显示横幅，因为已经默认允许分析
+      setShowBanner(false);
     }
   }, []);
 

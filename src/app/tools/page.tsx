@@ -1,62 +1,56 @@
-import { Metadata } from "next";
+'use client';
+
 import { siteConfig } from "@/config/site";
 import { videoEditingTools, careerTools } from "@/data/site-content";
 import Link from "next/link";
 import FAQSchema from "@/components/FAQ/FAQSchema";
+import { sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
-export const metadata: Metadata = {
-  title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
-  description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
-  keywords: [
-    ...siteConfig.keywords,
-    "video editing software",
-    "tools",
-    "resources",
-    "free software",
-    "professional tools",
-    "editing workflow",
-    "video editor toolkit",
-    "editing software download",
-    "career tools video editor",
-    "professional software",
-    "free editing tools",
-    "video editing resources"
-  ],
-  openGraph: {
+export default function ToolsPage() {
+  // 设置页面SEO元数据
+  useSEO({
     title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
     description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
-    url: "https://assistvideoeditorjobs.com/tools",
-    type: "website",
-    images: [
-      {
-        url: "https://assistvideoeditorjobs.com/og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Best Video Editing Tools 2025 - Complete Toolkit"
-      }
-    ]
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
-    description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools.",
-    images: ["https://assistvideoeditorjobs.com/og.jpg"]
-  },
-  alternates: {
+    keywords: [
+      ...siteConfig.keywords,
+      "video editing software",
+      "tools",
+      "resources",
+      "free software",
+      "professional tools",
+      "editing workflow",
+      "video editor toolkit",
+      "editing software download",
+      "career tools video editor",
+      "professional software",
+      "free editing tools",
+      "video editing resources"
+    ],
+    ogTitle: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
+    ogDescription: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
+    ogImage: "https://assistvideoeditorjobs.com/og-tools.jpg",
     canonical: "https://assistvideoeditorjobs.com/tools"
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  }
-};
+  });
+
+  // 跟踪工具页面交互
+  const handleToolClick = (toolName: string, toolCategory: string, toolType: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'tool_interaction',
+      event_label: toolName,
+      element_type: 'tool_card',
+      tool_category: toolCategory,
+      tool_type: toolType,
+    });
+  };
+
+  const handleCategoryClick = (categoryName: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'tool_category',
+      event_label: categoryName,
+      element_type: 'category_tab',
+    });
+  };
 
 const toolsFAQs = [
   {
@@ -77,7 +71,6 @@ const toolsFAQs = [
   }
 ];
 
-export default function ToolsPage() {
   return (
     <>
       <FAQSchema faqs={toolsFAQs} />

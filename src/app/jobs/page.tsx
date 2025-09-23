@@ -1,31 +1,60 @@
-import { Metadata } from "next";
+'use client';
+
 import { siteConfig } from "@/config/site";
 import { jobCategories } from "@/data/site-content";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
-  description:
-    "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
-  keywords: [
-    ...siteConfig.keywords,
-    "assistant video editor jobs",
-    "remote video editing jobs",
-    "freelance assistant editor",
-    "career opportunities",
-    "video editing careers",
-    "entry level video editor jobs",
-  ],
-  openGraph: {
-    title: "Assistant Video Editor Jobs - Start Your Career",
-    description:
-      "Explore freelance, remote, and entry-level assistant video editor opportunities. Find the right path to grow your editing career.",
-    url: "https://yourdomain.com/jobs",
-    type: "website",
-  },
-};
+import { trackJobView, sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function JobsPage() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
+    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
+    keywords: [
+      ...siteConfig.keywords,
+      "assistant video editor jobs",
+      "remote video editing jobs",
+      "freelance assistant editor",
+      "career opportunities",
+      "video editing careers",
+      "entry level video editor jobs",
+    ],
+    ogTitle: "Assistant Video Editor Jobs - Start Your Career",
+    ogDescription: "Explore freelance, remote, and entry-level assistant video editor opportunities. Find the right path to grow your editing career.",
+    ogImage: "https://assistvideoeditorjobs.com/og-jobs.jpg",
+    canonical: "https://assistvideoeditorjobs.com/jobs"
+  });
+
+  // 跟踪页面浏览
+  const handleJobCategoryClick = (categoryTitle: string, categoryPath: string) => {
+    trackJobView(`category-${categoryPath}`, categoryTitle, 'Job Category');
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'job_interaction',
+      event_label: categoryTitle,
+      element_type: 'job_category',
+      category_path: categoryPath,
+    });
+  };
+
+  const handlePlatformClick = (platformName: string, platformUrl: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'external_link',
+      event_label: platformName,
+      element_type: 'job_platform',
+      platform_url: platformUrl,
+    });
+  };
+
+  const handleResourceClick = (resourceTitle: string, resourcePath: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'resource_interaction',
+      event_label: resourceTitle,
+      element_type: 'job_resource',
+      resource_path: resourcePath,
+    });
+  };
+
   return (
     <>
       {/* 1. Hero Section */}
@@ -112,6 +141,7 @@ export default function JobsPage() {
               <Link
                 key={index}
                 href={resource.path}
+                onClick={() => handleResourceClick(resource.title, resource.path)}
                 className="group block overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl duration-500 hover:-translate-y-2 transition-all dark:bg-dark dark:hover:shadow-gray-dark border border-gray-100 dark:border-gray-700"
               >
                 <div className="p-8">
@@ -176,6 +206,7 @@ export default function JobsPage() {
                   </p>
                   <Link
                     href={category.path}
+                    onClick={() => handleJobCategoryClick(category.title, category.path)}
                     className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transform group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Explore {category.title}
@@ -279,6 +310,7 @@ export default function JobsPage() {
                 <Link
                   href={platform.url}
                   target="_blank"
+                  onClick={() => handlePlatformClick(platform.name, platform.url)}
                   className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group-hover:translate-x-2 transform duration-300"
                 >
                   Visit {platform.name}

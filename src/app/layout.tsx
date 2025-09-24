@@ -6,7 +6,6 @@ import { Providers } from "./providers";
 import Script from "next/script";
 import "../styles/index.css";
 import GoogleAnalytics from "@/components/Analytics/GoogleAnalytics";
-import PrivacyConsent from "@/components/Analytics/PrivacyConsent";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -42,10 +41,8 @@ export default function RootLayout({
       </head>
 
       <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`} suppressHydrationWarning>
-        {/* Google Analytics 4 - 优化配置 */}
         <GoogleAnalytics 
           measurementId={process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-VZZMFQ9BWE'}
-          enabled={process.env.NEXT_PUBLIC_GA4_ENABLED === 'true' && process.env.NODE_ENV === 'production'}
         />
         
         <Providers>
@@ -53,7 +50,6 @@ export default function RootLayout({
           {children}
           <Footer />
           <ScrollToTop />
-          <PrivacyConsent />
         </Providers>
         
         {/* JSON-LD Schema - Load after interactive to avoid blocking */}

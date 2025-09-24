@@ -20,19 +20,7 @@ export default function GoogleAnalytics({
   enabled = true 
 }: GoogleAnalyticsProps) {
   useEffect(() => {
-    // 记录GA4配置信息
-    console.log('[GA4] 初始化检查:', {
-      measurementId,
-      enabled,
-      nodeEnv: process.env.NODE_ENV,
-      ga4Enabled: process.env.NEXT_PUBLIC_GA4_ENABLED
-    });
-
-    // 在开发环境或禁用时，不执行GA4初始化
-    if (!enabled || process.env.NODE_ENV === 'development') {
-      console.log('[GA4] 跳过初始化 - 开发环境或已禁用');
-      return;
-    }
+    if (!enabled) return;
 
     // 初始化 dataLayer
     window.dataLayer = window.dataLayer || [];
@@ -45,61 +33,21 @@ export default function GoogleAnalytics({
     // 配置GA4
     window.gtag('js', new Date());
     window.gtag('config', measurementId, {
-      // 性能优化配置
       send_page_view: true,
-      transport_type: 'beacon',
-      // 隐私保护配置
-      anonymize_ip: true,
-      allow_google_signals: false,
-      allow_ad_personalization_signals: false,
-      // 增强测量配置
-      enhanced_measurements: {
-        scrolls: true,
-        outbound_clicks: true,
-        site_search: true,
-        video_engagement: true,
-        file_downloads: true,
-        page_changes: true,
-        form_interactions: true,
-      },
-      // 自定义参数
-      custom_map: {
-        'custom_parameter_1': 'user_type',
-        'custom_parameter_2': 'page_category',
-      },
-    });
-
-    // 设置默认隐私配置 - 允许分析，拒绝广告
-    window.gtag('consent', 'default', {
-      'analytics_storage': 'granted',
-      'ad_storage': 'denied',
-      'ad_user_data': 'denied',
-      'ad_personalization': 'denied',
     });
 
   }, [measurementId, enabled]);
 
-  // 在开发环境或禁用时，不渲染GA4脚本
-  if (!enabled || process.env.NODE_ENV === 'development') {
+  // 只有在禁用时才不渲染GA4脚本
+  if (!enabled) {
     return null;
   }
 
   return (
-    <>
-      {/* Google Analytics 4 脚本 */}
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-        strategy="afterInteractive"
-        onLoad={() => {
-          console.log('[GA4] 脚本加载成功');
-          console.log('[GA4] gtag函数可用:', typeof window.gtag);
-          console.log('[GA4] dataLayer:', window.dataLayer);
-        }}
-        onError={() => {
-          console.error('[GA4] 脚本加载失败');
-        }}
-      />
-    </>
+    <Script
+      src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
+      strategy="afterInteractive"
+    />
   );
 }
 

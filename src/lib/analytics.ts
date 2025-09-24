@@ -2,18 +2,8 @@
 
 export const GA4_CONFIG = {
   measurementId: process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID || 'G-VZZMFQ9BWE',
-  enabled: process.env.NEXT_PUBLIC_GA4_ENABLED === 'true' && process.env.NODE_ENV === 'production',
+  enabled: process.env.NODE_ENV === 'production',
   debug: process.env.NODE_ENV === 'development',
-  // 添加更详细的日志
-  logConfig: () => {
-    console.log('[GA4 Config]', {
-      measurementId: GA4_CONFIG.measurementId,
-      enabled: GA4_CONFIG.enabled,
-      debug: GA4_CONFIG.debug,
-      nodeEnv: process.env.NODE_ENV,
-      ga4Enabled: process.env.NEXT_PUBLIC_GA4_ENABLED
-    });
-  }
 };
 
 // 事件类型定义

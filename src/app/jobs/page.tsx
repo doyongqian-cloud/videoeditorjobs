@@ -1,62 +1,132 @@
-'use client';
-
+import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { jobCategories } from "@/data/site-content";
 import Link from "next/link";
-import { trackJobView, sendEvent, GA4_EVENTS } from "@/lib/analytics";
-import { useSEO } from "@/hooks/useSEO";
+import Script from "next/script";
+
+export const metadata: Metadata = {
+  title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
+  description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
+  keywords: [
+    ...siteConfig.keywords,
+    "assistant video editor jobs",
+    "remote video editing jobs",
+    "freelance assistant editor",
+    "career opportunities",
+    "video editing careers",
+    "entry level video editor jobs",
+    "video editor job search",
+    "post production jobs",
+    "media production careers",
+    "video editing employment",
+    "assistant editor positions",
+    "junior video editor jobs",
+    "video editing internships",
+    "creative industry jobs",
+    "film editing careers"
+  ],
+  openGraph: {
+    title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
+    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance.",
+    url: "https://assistvideoeditorjobs.com/jobs",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og-jobs.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Jobs - Start Your Career"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Jobs 2025",
+    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles.",
+    images: ["https://assistvideoeditorjobs.com/og-jobs.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/jobs"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
+};
 
 export default function JobsPage() {
-  // 设置页面SEO元数据
-  useSEO({
-    title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
-    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
-    keywords: [
-      ...siteConfig.keywords,
-      "assistant video editor jobs",
-      "remote video editing jobs",
-      "freelance assistant editor",
-      "career opportunities",
-      "video editing careers",
-      "entry level video editor jobs",
-    ],
-    ogTitle: "Assistant Video Editor Jobs - Start Your Career",
-    ogDescription: "Explore freelance, remote, and entry-level assistant video editor opportunities. Find the right path to grow your editing career.",
-    ogImage: "https://assistvideoeditorjobs.com/og-jobs.jpg",
-    canonical: "https://assistvideoeditorjobs.com/jobs"
-  });
 
-  // 跟踪页面浏览
-  const handleJobCategoryClick = (categoryTitle: string, categoryPath: string) => {
-    trackJobView(`category-${categoryPath}`, categoryTitle, 'Job Category');
-    sendEvent(GA4_EVENTS.CLICK, {
-      event_category: 'job_interaction',
-      event_label: categoryTitle,
-      element_type: 'job_category',
-      category_path: categoryPath,
-    });
+  // 生成结构化数据
+  const jobPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Assistant Video Editor Jobs",
+    "description": "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance.",
+    "employmentType": ["FULL_TIME", "PART_TIME", "CONTRACTOR", "FREELANCE"],
+    "industry": "Media Production",
+    "occupationalCategory": "Video Editor",
+    "workHours": "Flexible",
+    "datePosted": new Date().toISOString(),
+    "validThrough": new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs Platform",
+      "url": "https://assistvideoeditorjobs.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote",
+        "addressCountry": "US"
+      }
+    }
   };
 
-  const handlePlatformClick = (platformName: string, platformUrl: string) => {
-    sendEvent(GA4_EVENTS.CLICK, {
-      event_category: 'external_link',
-      event_label: platformName,
-      element_type: 'job_platform',
-      platform_url: platformUrl,
-    });
-  };
-
-  const handleResourceClick = (resourceTitle: string, resourcePath: string) => {
-    sendEvent(GA4_EVENTS.CLICK, {
-      event_category: 'resource_interaction',
-      event_label: resourceTitle,
-      element_type: 'job_resource',
-      resource_path: resourcePath,
-    });
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://assistvideoeditorjobs.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Jobs",
+        "item": "https://assistvideoeditorjobs.com/jobs"
+      }
+    ]
   };
 
   return (
     <>
+      <Script
+        id="job-posting-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jobPostingSchema)
+        }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
       {/* 1. Hero Section */}
       <section className="relative pt-32 lg:pt-40 pb-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-dark dark:to-dark">
         <div className="container">
@@ -141,7 +211,6 @@ export default function JobsPage() {
               <Link
                 key={index}
                 href={resource.path}
-                onClick={() => handleResourceClick(resource.title, resource.path)}
                 className="group block overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl duration-500 hover:-translate-y-2 transition-all dark:bg-dark dark:hover:shadow-gray-dark border border-gray-100 dark:border-gray-700"
               >
                 <div className="p-8">
@@ -206,7 +275,6 @@ export default function JobsPage() {
                   </p>
                   <Link
                     href={category.path}
-                    onClick={() => handleJobCategoryClick(category.title, category.path)}
                     className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transform group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Explore {category.title}
@@ -310,7 +378,6 @@ export default function JobsPage() {
                 <Link
                   href={platform.url}
                   target="_blank"
-                  onClick={() => handlePlatformClick(platform.name, platform.url)}
                   className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors group-hover:translate-x-2 transform duration-300"
                 >
                   Visit {platform.name}

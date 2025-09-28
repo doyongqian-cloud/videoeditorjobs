@@ -3,12 +3,24 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Entry-Level Assistant Video Editor Jobs",
-  description: "Explore entry-level assistant video editor jobs. Learn how to start your editing career with no experience and land your first job in 2025.",
+  title: "Entry-Level Assistant Video Editor Jobs 2025 | No Experience Required",
+  description: "Find entry-level assistant video editor jobs with no experience required. Learn how to start your video editing career, build skills, and land your first job in 2025.",
   keywords: [
     ...siteConfig.keywords,
     "entry level assistant video editor jobs",
     "junior assistant video editor",
+    "no experience video editor jobs",
+    "beginner video editor jobs",
+    "entry level video editing positions",
+    "assistant editor trainee",
+    "junior video editor",
+    "video editing intern",
+    "starting video editing career",
+    "first video editor job",
+    "video editing apprenticeship",
+    "entry level post production",
+    "junior editor positions",
+    "video editing career start"
   ],
   openGraph: {
     title: "Entry-Level Assistant Video Editor Jobs",

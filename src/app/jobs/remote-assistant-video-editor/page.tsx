@@ -3,12 +3,25 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Remote Assistant Video Editor Jobs",
-  description: "Browse remote assistant video editor jobs. Work from home and build your editing career with global opportunities.",
+  title: "Remote Assistant Video Editor Jobs 2025 | Work From Home",
+  description: "Find remote assistant video editor jobs and work from home opportunities. Discover global remote positions, salary expectations, and career growth in video editing.",
   keywords: [
     ...siteConfig.keywords,
     "remote assistant video editor jobs",
     "work from home video editor assistant",
+    "remote video editing jobs",
+    "work from home video editor",
+    "remote post production jobs",
+    "virtual assistant video editor",
+    "online video editing jobs",
+    "remote media production",
+    "work from home editing",
+    "telecommute video editor",
+    "remote freelance video editor",
+    "virtual video editing assistant",
+    "remote creative jobs",
+    "work from home media jobs",
+    "remote film editing jobs"
   ],
   openGraph: {
     title: "Remote Assistant Video Editor Jobs",

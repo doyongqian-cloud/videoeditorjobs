@@ -4,14 +4,27 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Resources",
+  title: "Assistant Video Editor Resources 2025 | Job Boards, Resume Tips & Career Tools",
   description:
-    "Access essential assistant video editor resources: resume tips, job boards, cover letter examples, and career-building tools.",
+    "Essential resources for assistant video editors: job boards, resume tips, cover letter examples, portfolio templates, interview guides, and career-building tools.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor resources",
     "job boards",
     "resume tips",
+    "video editor job boards",
+    "video editing career resources",
+    "assistant editor job search",
+    "video editor resume examples",
+    "cover letter video editor",
+    "portfolio templates video editor",
+    "video editing job sites",
+    "career development video editor",
+    "job search resources",
+    "video editor networking",
+    "professional development resources",
+    "video editing career guidance",
+    "job application resources"
   ],
   openGraph: {
     title: "Assistant Video Editor Resources",

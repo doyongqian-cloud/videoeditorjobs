@@ -2,8 +2,39 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Free Video Editing Software | Assistant Video Editor Jobs",
-  description: "Discover the best free video editing software for assistant video editors, including features, system requirements, and download links.",
+  title: "Best Free Video Editing Software 2025 | Professional Tools for Assistant Editors",
+  description: "Discover the best free video editing software for assistant video editors: DaVinci Resolve, OpenShot, Shotcut, and more. Complete reviews with features, system requirements, and download links.",
+  keywords: [
+    "free video editing software",
+    "best free video editor",
+    "free video editing tools",
+    "DaVinci Resolve free",
+    "OpenShot video editor",
+    "Shotcut free editor",
+    "free video editing programs",
+    "professional free video editor",
+    "free video editing software download",
+    "video editing software free",
+    "free video editor 2025",
+    "open source video editor",
+    "free video editing app",
+    "video editing software comparison",
+    "free video editing tutorial"
+  ],
+  openGraph: {
+    title: "Best Free Video Editing Software 2025 | Professional Tools for Assistant Editors",
+    description: "Discover the best free video editing software for assistant video editors: DaVinci Resolve, OpenShot, Shotcut, and more.",
+    url: "https://assistvideoeditorjobs.com/tools/free-editing-software",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Free Video Editing Software 2025",
+    description: "Professional-grade free video editing tools for assistant editors.",
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/tools/free-editing-software"
+  }
 };
 
 const FreeEditingSoftware = () => {

@@ -3,12 +3,26 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Freelance Assistant Video Editor Jobs",
-  description: "Discover freelance assistant video editor jobs. Find contract gigs, remote projects, and build your portfolio while working from anywhere.",
+  title: "Freelance Assistant Video Editor Jobs 2025 | Contract & Gig Work",
+  description: "Find freelance assistant video editor jobs, contract gigs, and project-based work. Build your portfolio, set your rates, and work from anywhere as a freelance video editor.",
   keywords: [
     ...siteConfig.keywords,
     "freelance assistant video editor jobs",
     "contract assistant video editor",
+    "freelance video editor jobs",
+    "contract video editing work",
+    "gig economy video editor",
+    "project based video editing",
+    "freelance post production",
+    "independent video editor",
+    "video editing contractor",
+    "freelance media production",
+    "self employed video editor",
+    "video editing gigs",
+    "freelance creative work",
+    "contract film editing",
+    "video editing projects",
+    "freelance portfolio building"
   ],
   openGraph: {
     title: "Freelance Assistant Video Editor Jobs",

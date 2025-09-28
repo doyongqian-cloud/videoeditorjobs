@@ -3,9 +3,26 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Project Management Tools - Video Editing Workflow",
-  description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",
-  keywords: [...siteConfig.keywords, "project management", "workflow", "productivity tools"],
+  title: "Project Management Tools for Video Editors 2025 | Workflow & Productivity",
+  description: "Essential project management tools for video editing workflows: Trello, Asana, Monday.com, Frame.io. Streamline your editing process and boost productivity.",
+  keywords: [
+    ...siteConfig.keywords, 
+    "project management", 
+    "workflow", 
+    "productivity tools",
+    "video editing project management",
+    "editing workflow tools",
+    "video production management",
+    "post production workflow",
+    "video editing productivity",
+    "project management software",
+    "video editing organization",
+    "editing team collaboration",
+    "video project tracking",
+    "editing workflow optimization",
+    "video production tools",
+    "post production management"
+  ],
   openGraph: {
     title: "Project Management Tools - Video Editing Workflow",
     description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",

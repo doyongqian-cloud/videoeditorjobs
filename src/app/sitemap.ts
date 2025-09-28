@@ -240,17 +240,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/interview`,
       lastModified: currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/onboarding`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/start`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/help`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/start`,
+      url: `${baseUrl}/faq`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.8,

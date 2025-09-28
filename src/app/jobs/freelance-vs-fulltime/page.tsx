@@ -4,12 +4,26 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Freelance vs Full-Time Assistant Video Editing",
+  title: "Freelance vs Full-Time Assistant Video Editor Jobs 2025 | Complete Comparison",
   description:
-    "Compare freelance vs full-time assistant video editor jobs. Discover pros, cons, salary differences, and which career path is right for you.",
+    "Compare freelance vs full-time assistant video editor jobs: salary differences, benefits, work-life balance, career growth, and which path is right for you in 2025.",
   keywords: [
     ...siteConfig.keywords,
     "freelance vs full-time assistant video editor jobs",
+    "freelance vs employee video editor",
+    "contract vs permanent video editing",
+    "video editor career comparison",
+    "freelance video editor benefits",
+    "full time video editor benefits",
+    "video editing career paths",
+    "self employed vs employed",
+    "video editor work arrangements",
+    "freelance vs salary video editor",
+    "video editing job types",
+    "career choice video editor",
+    "video editor employment options",
+    "freelance vs staff editor",
+    "video editing career decisions"
   ],
   openGraph: {
     title: "Freelance vs Full-Time Assistant Video Editing",

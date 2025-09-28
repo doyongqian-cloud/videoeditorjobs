@@ -1,55 +1,81 @@
-'use client';
-
+import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { videoEditingTools, careerTools } from "@/data/site-content";
 import Link from "next/link";
 import FAQSchema from "@/components/FAQ/FAQSchema";
-import { sendEvent, GA4_EVENTS } from "@/lib/analytics";
-import { useSEO } from "@/hooks/useSEO";
+import Script from "next/script";
 
-export default function ToolsPage() {
-  // 设置页面SEO元数据
-  useSEO({
+export const metadata: Metadata = {
+  title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
+  description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
+  keywords: [
+    ...siteConfig.keywords,
+    "video editing software",
+    "tools",
+    "resources",
+    "free software",
+    "professional tools",
+    "editing workflow",
+    "video editor toolkit",
+    "editing software download",
+    "career tools video editor",
+    "professional software",
+    "free editing tools",
+    "video editing resources",
+    "DaVinci Resolve",
+    "Adobe Premiere Pro",
+    "Final Cut Pro",
+    "video editing apps",
+    "post production software",
+    "video editing tutorials",
+    "editing software comparison",
+    "video editing workflow tools"
+  ],
+  openGraph: {
     title: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
     description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
-    keywords: [
-      ...siteConfig.keywords,
-      "video editing software",
-      "tools",
-      "resources",
-      "free software",
-      "professional tools",
-      "editing workflow",
-      "video editor toolkit",
-      "editing software download",
-      "career tools video editor",
-      "professional software",
-      "free editing tools",
-      "video editing resources"
-    ],
-    ogTitle: "Best Video Editing Tools 2025 | Free & Paid Software for Assistant Editors",
-    ogDescription: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
-    ogImage: "https://assistvideoeditorjobs.com/og-tools.jpg",
+    url: "https://assistvideoeditorjobs.com/tools",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og-tools.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Best Video Editing Tools 2025"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Video Editing Tools 2025",
+    description: "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools.",
+    images: ["https://assistvideoeditorjobs.com/og-tools.jpg"]
+  },
+  alternates: {
     canonical: "https://assistvideoeditorjobs.com/tools"
-  });
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
+};
 
-  // 跟踪工具页面交互
+export default function ToolsPage() {
+
+  // 简化的点击处理函数（移除客户端依赖）
   const handleToolClick = (toolName: string, toolCategory: string, toolType: string) => {
-    sendEvent(GA4_EVENTS.CLICK, {
-      event_category: 'tool_interaction',
-      event_label: toolName,
-      element_type: 'tool_card',
-      tool_category: toolCategory,
-      tool_type: toolType,
-    });
+    // 可以添加服务端跟踪逻辑
   };
 
   const handleCategoryClick = (categoryName: string) => {
-    sendEvent(GA4_EVENTS.CLICK, {
-      event_category: 'tool_category',
-      event_label: categoryName,
-      element_type: 'category_tab',
-    });
+    // 可以添加服务端跟踪逻辑
   };
 
 const toolsFAQs = [
@@ -71,8 +97,64 @@ const toolsFAQs = [
   }
 ];
 
+  // 生成结构化数据
+  const softwareApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Video Editing Tools Collection",
+    "description": "Complete toolkit for assistant video editors: free editing software, resume templates, project management tools. Start with free options, upgrade to professional tools as you grow.",
+    "applicationCategory": "Video Editing Software",
+    "operatingSystem": "Windows, macOS, Linux",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs Platform",
+      "url": "https://assistvideoeditorjobs.com"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://assistvideoeditorjobs.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://assistvideoeditorjobs.com/tools"
+      }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="software-application-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(softwareApplicationSchema)
+        }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
       <FAQSchema faqs={toolsFAQs} />
       {/* 1. Hero Section */}
       <section className="relative pt-32 lg:pt-40 pb-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-dark dark:to-dark">

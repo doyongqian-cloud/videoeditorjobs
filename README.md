@@ -1,5 +1,7 @@
 # Assistant Video Editor - Career Platform
 
+https://www.assistvideoeditorjobs.com
+
 Assistant Video Editor is a comprehensive platform designed to connect Assistant Video Editor professionals with job opportunities, career resources, and industry insights. Built with Next.js, this platform provides everything needed for Assistant Video Editors to advance their careers.
 
 ## 🎯 Platform Features

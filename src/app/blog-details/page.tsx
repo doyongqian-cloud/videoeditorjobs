@@ -5,8 +5,52 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details | Assistant Video Editor - Industry Insights",
-  description: "Read in-depth articles about Assistant Video Editor careers, industry trends, and professional development. Stay updated with the latest insights for Assistant Video Editors.",
+  title: "Blog Details & Industry Insights | Assistant Video Editor Jobs",
+  description: "Read in-depth articles about Assistant Video Editor careers, industry trends, and professional development. Stay updated with the latest insights, tips, and strategies for video editing professionals.",
+  keywords: [
+    "assistant video editor blog",
+    "video editing industry insights",
+    "career development articles",
+    "video editor tips",
+    "industry trends",
+    "professional development",
+    "video editing news",
+    "career advice"
+  ],
+  openGraph: {
+    title: "Blog Details & Industry Insights | Assistant Video Editor Jobs",
+    description: "Read in-depth articles about Assistant Video Editor careers, industry trends, and professional development.",
+    url: "https://assistvideoeditorjobs.com/blog-details",
+    type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Blog Details & Insights"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog Details & Industry Insights | Assistant Video Editor Jobs",
+    description: "Read in-depth articles about Assistant Video Editor careers, industry trends, and professional development.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/blog-details"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 const BlogDetailsPage = () => {

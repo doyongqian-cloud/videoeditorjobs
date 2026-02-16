@@ -2,8 +2,52 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor vs Video Editor: Key Differences | Assistant Video Editor Jobs",
-  description: "Understand the differences between assistant video editor and video editor roles, responsibilities, and career progression paths.",
+  title: "Assistant Video Editor vs Video Editor: Complete Role Comparison (2025)",
+  description: "Comprehensive comparison between assistant video editor and video editor roles. Understand key differences in responsibilities, skills, salary expectations, career paths, and advancement opportunities in the video editing industry.",
+  keywords: [
+    "assistant video editor vs video editor",
+    "video editor role comparison",
+    "career differences video editing",
+    "assistant editor responsibilities",
+    "video editor career path",
+    "role progression video editing",
+    "job responsibilities comparison",
+    "video editing career levels"
+  ],
+  openGraph: {
+    title: "Assistant Video Editor vs Video Editor: Complete Role Comparison (2025)",
+    description: "Comprehensive comparison between assistant video editor and video editor roles. Understand key differences in responsibilities, skills, and career paths.",
+    url: "https://assistvideoeditorjobs.com/blog/assistant-vs-video-editor",
+    type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor vs Video Editor Role Comparison"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor vs Video Editor: Complete Role Comparison (2025)",
+    description: "Comprehensive comparison between assistant video editor and video editor roles. Understand key differences and career paths.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/blog/assistant-vs-video-editor"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 const AssistantVsVideoEditor = () => {
@@ -56,7 +100,7 @@ const AssistantVsVideoEditor = () => {
               <h3>Career Stage</h3>
               <p>
                 Assistant video editor is typically an entry-level or early-career position that serves as 
-                a stepping stone to becoming a full video editor. It's ideal for recent graduates or 
+                a stepping stone to becoming a full video editor. It&apos;s ideal for recent graduates or 
                 individuals transitioning into video editing from other fields.
               </p>
 
@@ -185,7 +229,7 @@ const AssistantVsVideoEditor = () => {
 
               <h2>Making the Transition</h2>
               
-              <h3>When You're Ready</h3>
+              <h3>When You&apos;re Ready</h3>
               <ul>
                 <li>Consistently produce high-quality work</li>
                 <li>Take initiative on projects and show leadership</li>
@@ -212,7 +256,7 @@ const AssistantVsVideoEditor = () => {
                 goals.
               </p>
               <p>
-                Whether you're starting as an assistant or advancing to an editor role, focus on continuous 
+                Whether you&apos;re starting as an assistant or advancing to an editor role, focus on continuous 
                 learning, building strong relationships, and developing both technical and creative skills. 
                 The video editing industry offers diverse opportunities for growth and advancement for 
                 dedicated professionals.

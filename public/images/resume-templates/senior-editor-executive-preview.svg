@@ -1,0 +1,23 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f3f4f6"/>
+  <rect x="20" y="20" width="260" height="160" fill="white" stroke="#6b7280" stroke-width="2"/>
+  
+  <!-- Executive Header -->
+  <rect x="30" y="30" width="240" height="45" fill="#374151"/>
+  <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">MICHAEL CHEN</text>
+  <text x="40" y="62" fill="white" font-family="Arial, sans-serif" font-size="12">Video Production Director</text>
+  <text x="40" y="72" fill="white" font-family="Arial, sans-serif" font-size="10">Executive Level</text>
+  
+  <!-- Contact -->
+  <text x="30" y="90" fill="#374151" font-family="Arial, sans-serif" font-size="10">michael.chen@email.com | (555) 321-9876 | LinkedIn: michaelchen</text>
+  
+  <!-- Executive Summary -->
+  <text x="30" y="110" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">EXECUTIVE SUMMARY</text>
+  <text x="30" y="125" fill="#374151" font-family="Arial, sans-serif" font-size="10">10+ years leading video production teams, $2M+ budget management</text>
+  
+  <!-- Leadership Experience -->
+  <text x="30" y="145" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">LEADERSHIP EXPERIENCE</text>
+  <text x="30" y="160" fill="#374151" font-family="Arial, sans-serif" font-size="10">Director of Video Production | Media Corp | 2019-Present</text>
+  <text x="30" y="175" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">• Led 15-person creative team • Managed $2M annual budget</text>
+  <text x="30" y="185" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">• Increased team productivity by 40%</text>
+</svg>

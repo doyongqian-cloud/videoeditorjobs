@@ -4,22 +4,32 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Top Job Platforms 2025 | Assistant Video Editor",
+  title: "Assistant Video Editor Resources 2025 | Job Boards, Resume Tips & Career Tools",
   description:
-    "Discover the best websites, platforms, and resources to find assistant video editor opportunities in 2025. Comprehensive guide to job hunting platforms.",
+    "Essential resources for assistant video editors: job boards, resume tips, cover letter examples, portfolio templates, interview guides, and career-building tools.",
   keywords: [
     ...siteConfig.keywords,
-    "assistant video editor jobs",
-    "video editing job platforms",
-    "job hunting websites",
-    "freelance video editing",
-    "remote video editor jobs",
-    "video editing career sites",
+    "assistant video editor resources",
+    "job boards",
+    "resume tips",
+    "video editor job boards",
+    "video editing career resources",
+    "assistant editor job search",
+    "video editor resume examples",
+    "cover letter video editor",
+    "portfolio templates video editor",
+    "video editing job sites",
+    "career development video editor",
+    "job search resources",
+    "video editor networking",
+    "professional development resources",
+    "video editing career guidance",
+    "job application resources"
   ],
   openGraph: {
-    title: "Top Job Platforms 2025 | Assistant Video Editor",
-    description: "Best job hunting platforms and resources for assistant video editors in 2025.",
-    url: "https://assistantvideoeditor.com/jobs/resources",
+    title: "Assistant Video Editor Resources",
+    description: "Essential resources for assistant video editors: job boards, resume tips, and tools.",
+    url: "https://assistvideoeditorjobs.com/jobs/resources",
     type: "article",
   },
 };
@@ -413,7 +423,7 @@ export default function JobResourcesPage() {
                 </div>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
                   Building relationships within the industry often leads to opportunities that 
-                  aren't publicly advertised. These platforms facilitate professional connections.
+                  aren&apos;t publicly advertised. These platforms facilitate professional connections.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   {[
@@ -518,7 +528,7 @@ export default function JobResourcesPage() {
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                   The key to finding great assistant video editor opportunities is diversifying your approach 
                   across multiple platforms while building a strong professional presence. Focus on platforms that 
-                  align with your career goals, whether that's full-time employment, freelance work, or remote opportunities. 
+                  align with your career goals, whether that&apos;s full-time employment, freelance work, or remote opportunities. 
                   Remember that the best opportunities often come from a combination of active job searching and 
                   passive networking within the industry.
                 </p>
@@ -559,7 +569,7 @@ export default function JobResourcesPage() {
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 10 years of experience in the video editing industry, Sarah has worked with 
                       major platforms including YouTube, Netflix, and independent production companies. 
-                      She's an Adobe Certified Professional and member of the Video Editing Association, 
+                      She&apos;s an Adobe Certified Professional and member of the Video Editing Association, 
                       specializing in helping video editors navigate their career paths and find the best opportunities.
                     </p>
                   </div>

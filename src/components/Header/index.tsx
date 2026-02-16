@@ -5,8 +5,11 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useAuth } from "@/contexts/AuthContext";
 
 const Header = () => {
+  const { user, signOut, loading } = useAuth();
+  
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -159,8 +162,37 @@ const Header = () => {
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-               
-                <div>
+                {loading ? (
+                  <div className="mr-4 h-8 w-8 animate-spin rounded-full border-2 border-primary border-t-transparent"></div>
+                ) : user ? (
+                  <div className="flex items-center space-x-4">
+                    <span className="text-dark dark:text-white text-sm">
+                      {user.user_metadata?.full_name || user.email}
+                    </span>
+                    <button
+                      onClick={() => signOut()}
+                      className="text-dark hover:text-primary dark:text-white/70 dark:hover:text-white text-sm font-medium"
+                    >
+                      Sign Out
+                    </button>
+                  </div>
+                ) : (
+                  <div className="flex items-center space-x-4">
+                    <Link
+                      href="/signin"
+                      className="text-dark hover:text-primary dark:text-white/70 dark:hover:text-white text-sm font-medium"
+                    >
+                      Sign In
+                    </Link>
+                    <Link
+                      href="/signup"
+                      className="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-xs text-sm font-medium transition duration-300"
+                    >
+                      Sign Up
+                    </Link>
+                  </div>
+                )}
+                <div className="ml-4">
                   <ThemeToggler />
                 </div>
               </div>

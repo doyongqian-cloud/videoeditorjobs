@@ -3,13 +3,30 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Paid Editing Tools - Professional Video Editing Software",
-  description: "Professional video editing software and tools for advanced users. Coming soon with comprehensive tool reviews and recommendations.",
-  keywords: [...siteConfig.keywords, "paid software", "professional tools", "video editing software"],
+  title: "Paid Video Editing Software 2025 | Professional Tools for Assistant Editors",
+  description: "Professional video editing software and tools for advanced users: Adobe Premiere Pro, Final Cut Pro, Avid Media Composer. Complete reviews, pricing, and recommendations.",
+  keywords: [
+    ...siteConfig.keywords, 
+    "paid software", 
+    "professional tools", 
+    "video editing software",
+    "Adobe Premiere Pro",
+    "Final Cut Pro",
+    "Avid Media Composer",
+    "professional video editor",
+    "paid video editing software",
+    "video editing software comparison",
+    "premium video editor",
+    "professional editing tools",
+    "video editing software reviews",
+    "best paid video editor",
+    "video editing software pricing",
+    "professional video editing suite"
+  ],
   openGraph: {
     title: "Paid Editing Tools - Professional Video Editing Software",
     description: "Professional video editing software and tools for advanced users. Coming soon with comprehensive tool reviews and recommendations.",
-    url: "https://assistantvideoeditor.com/tools/paid-editing-tools",
+    url: "https://assistvideoeditorjobs.com/tools/paid-editing-tools",
     type: "website",
   },
 };
@@ -114,7 +131,7 @@ export default function PaidEditingToolsPage() {
 
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
               <h3 className="mb-3 text-lg font-semibold text-black dark:text-white">
-                Get Notified When It's Ready
+                Get Notified When It&apos;s Ready
               </h3>
               <p className="text-body-color dark:text-body-color-dark mb-4">
                 We will let you know as soon as this comprehensive tool guide is available

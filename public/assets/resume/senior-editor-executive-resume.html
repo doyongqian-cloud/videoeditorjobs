@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Editor Executive Resume Template</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+            color: #1a202c;
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 5px solid #374151;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #374151;
+        }
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        .title {
+            font-size: 18px;
+            color: #4a5568;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .contact {
+            font-size: 13px;
+            color: #718096;
+        }
+        .executive-summary {
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #374151;
+        }
+        .summary-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .summary-text {
+            font-size: 13px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #374151;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .core-competencies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .competency {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #374151;
+        }
+        .competency h4 {
+            margin: 0 0 10px 0;
+            color: #1a202c;
+            font-size: 14px;
+        }
+        .competency p {
+            margin: 0;
+            font-size: 12px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        .experience-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 8px;
+            border-left: 4px solid #374151;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #1a202c;
+        }
+        .company {
+            font-weight: bold;
+            color: #374151;
+            font-size: 14px;
+        }
+        .date {
+            font-size: 12px;
+            color: #718096;
+            font-style: italic;
+        }
+        .achievements {
+            margin-top: 15px;
+        }
+        .achievement {
+            font-size: 12px;
+            color: #4a5568;
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .achievement:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #374151;
+            font-size: 10px;
+        }
+        .key-achievements {
+            background: #e6fffa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #38b2ac;
+        }
+        .achievement-title {
+            font-weight: bold;
+            color: #1a202c;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .achievement-desc {
+            font-size: 12px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+        .education {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .education-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #374151;
+        }
+        .degree {
+            font-weight: bold;
+            color: #1a202c;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .school {
+            color: #374151;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .year {
+            color: #718096;
+            font-size: 11px;
+            font-style: italic;
+        }
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .cert {
+            background: #f7fafc;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #374151;
+            font-size: 11px;
+        }
+        .cert-name {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        .cert-org {
+            color: #4a5568;
+        }
+        .cert-year {
+            color: #718096;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">MICHAEL CHEN</div>
+            <div class="title">Video Production Director & Executive Creative Leader</div>
+            <div class="contact">
+                michael.chen@email.com | (555) 321-9876 | San Francisco, CA | LinkedIn: michaelchen
+            </div>
+        </div>
+        
+        <div class="executive-summary">
+            <div class="summary-title">Executive Summary</div>
+            <div class="summary-text">
+                Accomplished video production executive with 12+ years of experience leading creative teams and delivering high-impact visual content for Fortune 500 companies. Proven track record of managing multi-million dollar budgets, driving innovation in video production workflows, and building high-performing teams. Expert in strategic planning, client relations, and implementing cutting-edge technologies to enhance creative output and operational efficiency.
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Core Competencies</div>
+            <div class="core-competencies">
+                <div class="competency">
+                    <h4>Strategic Leadership</h4>
+                    <p>Led 20+ person creative teams, managed $5M+ annual budgets, and developed long-term content strategies for major brands including Apple, Google, and Microsoft.</p>
+                </div>
+                <div class="competency">
+                    <h4>Video Production Excellence</h4>
+                    <p>Expert in all aspects of video production from concept to delivery, with deep knowledge of industry-standard tools and emerging technologies.</p>
+                </div>
+                <div class="competency">
+                    <h4>Client Relations & Business Development</h4>
+                    <p>Built and maintained relationships with C-level executives, increased client retention by 40%, and generated $10M+ in new business over 3 years.</p>
+                </div>
+                <div class="competency">
+                    <h4>Innovation & Technology</h4>
+                    <p>Implemented AI-powered editing tools, virtual production techniques, and automated workflows that increased team productivity by 60%.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Director of Video Production</span> | <span class="company">Creative Media Solutions</span>
+                    </div>
+                    <div class="date">2019 - Present</div>
+                </div>
+                <div class="achievements">
+                    <div class="achievement">Oversee 25-person creative team across 3 offices, managing $8M annual production budget</div>
+                    <div class="achievement">Developed and implemented company-wide video production standards and quality control processes</div>
+                    <div class="achievement">Led digital transformation initiative, reducing production time by 45% through automation and AI integration</div>
+                    <div class="achievement">Established strategic partnerships with major technology vendors, reducing costs by $1.2M annually</div>
+                    <div class="achievement">Mentored 15+ junior and mid-level professionals, with 90% receiving promotions within 2 years</div>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Video Producer</span> | <span class="company">Global Media Group</span>
+                    </div>
+                    <div class="date">2015 - 2019</div>
+                </div>
+                <div class="achievements">
+                    <div class="achievement">Produced 200+ high-profile video campaigns for Fortune 500 clients, generating $50M+ in client value</div>
+                    <div class="achievement">Managed complex multi-location productions with budgets up to $2M per project</div>
+                    <div class="achievement">Led cross-functional teams of 12+ professionals including directors, editors, and technical specialists</div>
+                    <div class="achievement">Implemented new project management system that improved delivery times by 30%</div>
+                </div>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Lead Video Editor</span> | <span class="company">Premier Productions</span>
+                    </div>
+                    <div class="date">2011 - 2015</div>
+                </div>
+                <div class="achievements">
+                    <div class="achievement">Edited award-winning commercial campaigns that generated 100M+ total views across platforms</div>
+                    <div class="achievement">Developed innovative editing techniques that became company standard practices</div>
+                    <div class="achievement">Trained and supervised team of 8 video editors and motion graphics artists</div>
+                    <div class="achievement">Collaborated with creative directors to develop visual concepts and brand guidelines</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="key-achievements">
+            <div class="achievement-title">Key Achievements & Recognition</div>
+            <div class="achievement-desc">
+                <strong>Industry Awards:</strong> 3x Cannes Lions winner, 2x Webby Awards, 5x Telly Awards<br>
+                <strong>Business Impact:</strong> Increased client satisfaction scores from 85% to 98% over 3 years<br>
+                <strong>Team Development:</strong> Built and scaled video production team from 5 to 25 professionals<br>
+                <strong>Innovation:</strong> Pioneered use of virtual production techniques, reducing location costs by 70%<br>
+                <strong>Revenue Growth:</strong> Grew department revenue from $2M to $8M annually through strategic client acquisition
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Education</div>
+            <div class="education">
+                <div class="education-item">
+                    <div class="degree">Master of Fine Arts in Film Production</div>
+                    <div class="school">University of Southern California</div>
+                    <div class="year">2009 - 2011</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree">Bachelor of Arts in Communications</div>
+                    <div class="school">Stanford University</div>
+                    <div class="year">2005 - 2009</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">Professional Certifications</div>
+            <div class="certifications">
+                <div class="cert">
+                    <div class="cert-name">Project Management Professional (PMP)</div>
+                    <div class="cert-org">Project Management Institute</div>
+                    <div class="cert-year">2022</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">Adobe Certified Expert</div>
+                    <div class="cert-org">Adobe Systems</div>
+                    <div class="cert-year">2021</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">Certified Scrum Master</div>
+                    <div class="cert-org">Scrum Alliance</div>
+                    <div class="cert-year">2020</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">DaVinci Resolve Master</div>
+                    <div class="cert-org">Blackmagic Design</div>
+                    <div class="cert-year">2019</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

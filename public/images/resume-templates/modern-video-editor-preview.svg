@@ -1,0 +1,22 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#f8fafc"/>
+  <rect x="20" y="20" width="260" height="160" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="30" y="30" width="240" height="40" fill="#3b82f6"/>
+  <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">JOHN DOE</text>
+  <text x="40" y="65" fill="white" font-family="Arial, sans-serif" font-size="12">Video Editor</text>
+  
+  <!-- Contact Info -->
+  <text x="30" y="90" fill="#374151" font-family="Arial, sans-serif" font-size="10">Email: john@example.com | Phone: (555) 123-4567</text>
+  
+  <!-- Skills Section -->
+  <text x="30" y="110" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SKILLS</text>
+  <text x="30" y="125" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Adobe Premiere Pro • Final Cut Pro • DaVinci Resolve</text>
+  
+  <!-- Experience -->
+  <text x="30" y="145" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">EXPERIENCE</text>
+  <text x="30" y="160" fill="#374151" font-family="Arial, sans-serif" font-size="10">Video Editor | ABC Productions | 2020-2023</text>
+  <text x="30" y="175" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">• Edited 100+ commercial videos</text>
+  <text x="30" y="185" fill="#6b7280" font-family="Arial, sans-serif" font-size="9">• Collaborated with creative teams</text>
+</svg>

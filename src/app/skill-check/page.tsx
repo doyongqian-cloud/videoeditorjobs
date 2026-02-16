@@ -1,20 +1,59 @@
-import { Metadata } from "next";
+'use client';
+
 import { siteConfig } from "@/config/site";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Project Management Tools - Video Editing Workflow",
-  description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",
-  keywords: [...siteConfig.keywords, "project management", "workflow", "productivity tools"],
-  openGraph: {
-    title: "Project Management Tools - Video Editing Workflow",
-    description: "Essential tools for managing video editing projects efficiently. Coming soon with comprehensive project management solutions.",
-    url: "https://yourdomain.com/tools/project-management-tools",
-    type: "website",
-  },
-};
+import { trackSkillAssessment, sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function ProjectManagementToolsPage() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Video Editor Skills Assessment & Check Tool (2025) | Coming Soon",
+    description: "Comprehensive skills assessment tool for assistant video editors. Evaluate your technical skills, creative abilities, and career readiness. Coming soon with detailed skill analysis and improvement recommendations.",
+    keywords: [
+      ...siteConfig.keywords,
+      "video editor skills assessment",
+      "skills check tool",
+      "video editing competency test",
+      "career readiness assessment",
+      "technical skills evaluation",
+      "creative skills test",
+      "video editor skill level"
+    ],
+    ogTitle: "Video Editor Skills Assessment & Check Tool (2025) | Coming Soon",
+    ogDescription: "Comprehensive skills assessment tool for assistant video editors. Evaluate your technical skills, creative abilities, and career readiness.",
+    ogImage: "https://assistvideoeditorjobs.com/og-skill-check.jpg",
+    canonical: "https://assistvideoeditorjobs.com/skill-check"
+  });
+
+  // 跟踪技能评估页面访问
+  const handleToolClick = (toolTitle: string, toolPath: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'tool_interaction',
+      event_label: toolTitle,
+      element_type: 'related_tool',
+      tool_path: toolPath,
+    });
+  };
+
+  const handleContactClick = () => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'engagement',
+      event_label: 'Contact Us - Skill Check',
+      element_type: 'contact_button',
+    });
+  };
+
+  // 模拟技能评估完成（用于演示）
+  const handleDemoAssessment = () => {
+    trackSkillAssessment('video-editing-demo', 7, 10);
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'demo',
+      event_label: 'Demo Skill Assessment',
+      element_type: 'demo_button',
+    });
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -32,10 +71,19 @@ export default function ProjectManagementToolsPage() {
               </span>
             </h1>
             <p className="mb-8 text-base text-body-color dark:text-body-color-dark md:text-lg max-w-3xl mx-auto leading-relaxed">
-              We're working hard to create a comprehensive guide to project management tools for video editors. 
+              We&apos;re working hard to create a comprehensive guide to project management tools for video editors. 
               This resource will help you streamline your workflow and boost productivity.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button
+                onClick={handleDemoAssessment}
+                className="inline-flex items-center justify-center rounded-lg bg-purple-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              >
+                Try Demo Assessment
+                <svg className="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </button>
               <Link
                 href="/tools"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
@@ -72,7 +120,7 @@ export default function ProjectManagementToolsPage() {
                 Coming Soon!
               </h2>
               <p className="text-lg text-body-color dark:text-body-color-dark">
-                We're building something amazing for you
+                We&apos;re building something amazing for you
               </p>
             </div>
             
@@ -114,13 +162,14 @@ export default function ProjectManagementToolsPage() {
 
             <div className="bg-primary/5 dark:bg-primary/10 rounded-xl p-6">
               <h3 className="mb-3 text-lg font-semibold text-black dark:text-white">
-                Get Notified When It's Ready
+                Get Notified When It&apos;s Ready
               </h3>
               <p className="text-body-color dark:text-body-color-dark mb-4">
-                We'll let you know as soon as this comprehensive project management guide is available
+                We&apos;ll let you know as soon as this comprehensive project management guide is available
               </p>
               <Link
                 href="/contact"
+                onClick={handleContactClick}
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transition-all duration-300"
               >
                 Contact Us
@@ -166,6 +215,7 @@ export default function ProjectManagementToolsPage() {
               <Link
                 key={index}
                 href={tool.path}
+                onClick={() => handleToolClick(tool.title, tool.path)}
                 className="group block overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-2xl duration-500 hover:-translate-y-2 transition-all dark:bg-dark dark:hover:shadow-gray-dark border border-gray-100 dark:border-gray-700"
               >
                 <div className="p-8">

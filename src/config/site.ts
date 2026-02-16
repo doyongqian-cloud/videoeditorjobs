@@ -3,8 +3,8 @@ import { SiteConfig } from "@/types/site";
 export const siteConfig: SiteConfig = {
   name: "Assistant Video Editor",
   description: "The premier platform for Assistant Video Editor careers. Find jobs, learn skills, access tools, and grow your video editing career with expert guidance.",
-  url: "https://assistantvideoeditor.com",
-  ogImage: "https://assistantvideoeditor.com/og.jpg",
+  url: "https://assistvideoeditorjobs.com",
+  ogImage: "https://assistvideoeditorjobs.com/og.jpg",
   links: {
     twitter: "https://twitter.com/assistantvideoeditor",
     github: "https://github.com/assistantvideoeditor",

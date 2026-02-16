@@ -2,8 +2,53 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Finding Freelance Clients as an Assistant Video Editor | Assistant Video Editor Jobs",
-  description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor, including marketing, networking, and client acquisition techniques.",
+  title: "Finding Freelance Clients as an Assistant Video Editor (2025) | Complete Guide",
+  description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor. Complete guide covering marketing, networking, client acquisition, pricing strategies, and business growth techniques.",
+  keywords: [
+    "finding freelance clients",
+    "freelance video editor clients",
+    "client acquisition strategies",
+    "freelance marketing",
+    "video editor networking",
+    "freelance business growth",
+    "client retention strategies",
+    "freelance pricing",
+    "video editing business"
+  ],
+  openGraph: {
+    title: "Finding Freelance Clients as an Assistant Video Editor (2025) | Complete Guide",
+    description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor. Complete guide covering marketing, networking, and business growth.",
+    url: "https://assistvideoeditorjobs.com/blog/finding-freelance-clients",
+    type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Finding Freelance Clients as an Assistant Video Editor"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Finding Freelance Clients as an Assistant Video Editor (2025)",
+    description: "Learn proven strategies for finding and attracting freelance clients as an assistant video editor.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/blog/finding-freelance-clients"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 const FindingFreelanceClients = () => {
@@ -78,7 +123,7 @@ const FindingFreelanceClients = () => {
 
               <h3>Video-Specific Platforms</h3>
               <ul>
-                <li><strong>Videohive:</strong> Envato's video marketplace</li>
+                <li><strong>Videohive:</strong> Envato&apos;s video marketplace</li>
                 <li><strong>Storyblocks:</strong> Video content creation platform</li>
                 <li><strong>Pond5:</strong> Stock video and editing services</li>
                 <li><strong>Shutterstock:</strong> Professional content creation</li>
@@ -90,7 +135,7 @@ const FindingFreelanceClients = () => {
                 <li><strong>EditStock:</strong> Practice footage and editing challenges</li>
                 <li><strong>Frame.io:</strong> Collaboration platform for video professionals</li>
                 <li><strong>Wipster:</strong> Video review and approval platform</li>
-                <li><strong>DaVinci Resolve Community:</strong> Blackmagic Design's community</li>
+                <li><strong>DaVinci Resolve Community:</strong> Blackmagic Design&apos;s community</li>
                 <li><strong>Adobe Creative Cloud Community:</strong> Adobe user community</li>
               </ul>
 
@@ -100,7 +145,7 @@ const FindingFreelanceClients = () => {
               <ul>
                 <li><strong>NAB Show:</strong> National Association of Broadcasters</li>
                 <li><strong>IBC:</strong> International Broadcasting Convention</li>
-                <li><strong>Adobe MAX:</strong> Adobe's annual creativity conference</li>
+                <li><strong>Adobe MAX:</strong> Adobe&apos;s annual creativity conference</li>
                 <li><strong>Local Film Festivals:</strong> Connect with local filmmakers</li>
                 <li><strong>Video Production Meetups:</strong> Industry-specific networking events</li>
               </ul>
@@ -229,7 +274,7 @@ const FindingFreelanceClients = () => {
 
               <h3>Building Long-Term Relationships</h3>
               <ul>
-                <li>Understand your clients' long-term goals</li>
+                <li>Understand your clients&apos; long-term goals</li>
                 <li>Offer ongoing support and maintenance</li>
                 <li>Suggest improvements and new opportunities</li>
                 <li>Stay in touch between projects</li>

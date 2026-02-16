@@ -4,22 +4,31 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Freelance vs Full-time | Assistant Video Editor",
+  title: "Freelance vs Full-Time Assistant Video Editor Jobs 2025 | Complete Comparison",
   description:
-    "Compare freelance and full-time career paths for assistant video editors. Understand the pros, cons, and choose the right direction for your career goals.",
+    "Compare freelance vs full-time assistant video editor jobs: salary differences, benefits, work-life balance, career growth, and which path is right for you in 2025.",
   keywords: [
     ...siteConfig.keywords,
-    "freelance video editor",
-    "full-time video editor",
+    "freelance vs full-time assistant video editor jobs",
+    "freelance vs employee video editor",
+    "contract vs permanent video editing",
+    "video editor career comparison",
+    "freelance video editor benefits",
+    "full time video editor benefits",
     "video editing career paths",
-    "freelance vs employment",
-    "video editing work styles",
-    "career choice video editing",
+    "self employed vs employed",
+    "video editor work arrangements",
+    "freelance vs salary video editor",
+    "video editing job types",
+    "career choice video editor",
+    "video editor employment options",
+    "freelance vs staff editor",
+    "video editing career decisions"
   ],
   openGraph: {
-    title: "Freelance vs Full-time | Assistant Video Editor",
-    description: "Compare freelance and full-time career paths for assistant video editors.",
-    url: "https://assistantvideoeditor.com/jobs/freelance-vs-fulltime",
+    title: "Freelance vs Full-Time Assistant Video Editing",
+    description: "Compare freelance vs full-time assistant video editor jobs: pros, cons, and salary differences.",
+    url: "https://assistvideoeditorjobs.com/jobs/freelance-vs-fulltime",
     type: "article",
   },
 };
@@ -86,7 +95,7 @@ export default function FreelanceVsFulltimePage() {
                   Introduction
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                  One of the most important decisions you'll face as an assistant video editor is whether to pursue 
+                  One of the most important decisions you&apos;ll face as an assistant video editor is whether to pursue 
                   a freelance career or seek full-time employment. Both paths offer unique advantages and challenges, 
                   and the right choice depends on your personal circumstances, career goals, and lifestyle preferences.
                 </p>
@@ -471,7 +480,7 @@ export default function FreelanceVsFulltimePage() {
                   Conclusion
                 </h2>
                 <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                  There's no universally "right" choice between freelance and full-time work as an assistant video editor. 
+                  There&apos;s no universally &quot;right&quot; choice between freelance and full-time work as an assistant video editor. 
                   The best path depends on your individual circumstances, goals, and preferences. Consider starting with 
                   full-time employment to build foundational skills and industry connections, then evaluate whether 
                   freelancing aligns with your evolving career goals. Remember that you can always change paths as your 
@@ -513,7 +522,7 @@ export default function FreelanceVsFulltimePage() {
                     </p>
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 8 years of experience in the video editing industry, Emily has worked both as a 
-                      full-time editor for major studios and as a successful freelancer. She's an Adobe Certified 
+                      full-time editor for major studios and as a successful freelancer. She&apos;s an Adobe Certified 
                       Professional and member of the Video Editing Association, specializing in helping video editors 
                       navigate career transitions and make informed decisions about their professional paths.
                     </p>

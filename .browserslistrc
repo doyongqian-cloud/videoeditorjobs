@@ -1,0 +1,19 @@
+# Modern browsers with good ES2017+ support
+# This reduces unnecessary polyfills and transforms for modern browsers
+
+# Modern browsers (last 2 versions of each major browser)
+last 2 Chrome versions
+last 2 Firefox versions
+last 2 Safari versions
+last 2 Edge versions
+
+# Modern mobile browsers
+last 2 iOS versions
+last 2 Android versions
+
+# Exclude very old browsers that don't support modern features
+not IE 11
+not IE_Mob 11
+not < 0.5%
+not dead
+

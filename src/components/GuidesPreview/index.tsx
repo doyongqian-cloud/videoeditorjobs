@@ -26,7 +26,7 @@ const GuideCard = ({ title, description, path, readTime }: GuideCardProps) => {
           href={path}
           className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
         >
-          Read More
+          Read this guide
           <svg
             className="ml-1 h-4 w-4"
             fill="none"
@@ -48,41 +48,35 @@ const GuideCard = ({ title, description, path, readTime }: GuideCardProps) => {
 
 const GuidesPreview = () => {
   return (
-    <section className="py-10 md:py-14 lg:py-16">
+    <section className="py-12 md:py-16 lg:py-20 bg-white dark:bg-gray-dark">
       <div className="container">
-        <div className="mb-8 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-black dark:text-white lg:text-4xl">
-            Master Your Assistant Video Editor Skills
+        <div className="mb-10 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-black dark:text-white lg:text-4xl">
+            Master the Skills
           </h2>
           <p className="text-base text-body-color dark:text-body-color-dark">
-            Expert guides to help you succeed in your career
+            Learn everything you need to become a successful assistant video editor
           </p>
         </div>
         
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-3">
           <GuideCard 
             title="What Does an Assistant Video Editor Do?"
-            description="Learn about daily responsibilities and tasks"
+            description="Complete breakdown of daily responsibilities, tasks, and workflow expectations in the role"
             path="/guides/what-does-an-assistant-video-editor-do"
             readTime="5 min read"
           />
           <GuideCard 
-            title="How to Become an Assistant Video Editor"
-            description="Step-by-step career path guide"
+            title="How to Get Started"
+            description="Step-by-step guide from beginner to landing your first assistant editor position"
             path="/guides/how-to-become"
             readTime="8 min read"
           />
           <GuideCard 
-            title="Essential Skills"
-            description="Master the required competencies"
+            title="Essential Skills & Requirements"
+            description="Must-have technical skills, software proficiency, and soft skills for success"
             path="/guides/skills"
             readTime="6 min read"
-          />
-          <GuideCard 
-            title="Resume & Portfolio Tips"
-            description="Stand out from the competition"
-            path="/guides/resume-portfolio"
-            readTime="7 min read"
           />
         </div>
         

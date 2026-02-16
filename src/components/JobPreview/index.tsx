@@ -52,18 +52,18 @@ const JobCategoryCard = ({ title, count, description, path, icon }: JobCategoryC
 
 const JobPreview = () => {
   return (
-    <section className="py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 md:py-16 lg:py-20 bg-white dark:bg-gray-dark">
       <div className="container">
         <div className="mb-10 text-center">
           <h2 className="mb-4 text-3xl font-bold text-black dark:text-white lg:text-4xl">
-            Find Your Next Assistant Video Editor Job
+            Find Your Job
           </h2>
           <p className="text-base text-body-color dark:text-body-color-dark">
-            Browse hundreds of opportunities across different categories
+            Explore current opportunities and start your video editing career
           </p>
         </div>
         
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <JobCategoryCard 
             title="Entry Level Jobs"
             count="45+"

@@ -4,24 +4,54 @@ import Link from "next/link";
 
 // ========== SEO 信息 ==========
 export const metadata: Metadata = {
-  title: "Salary & Career Growth | Assistant Video Editor",
-  description:
-    "Discover comprehensive salary insights, career progression paths, and earning potential for assistant video editors across different countries and experience levels.",
+  title: "Assistant Video Editor Salary & Career Growth Guide (2025) | Complete Analysis",
+  description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential, career progression, salary ranges by experience level, location, and industry. Updated with latest market data.",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor salary",
-    "video editing career growth",
-    "video editor earnings",
+    "video editor salary 2025",
+    "career path video editing",
+    "average pay video editor",
+    "salary expectations",
+    "career growth video editing",
     "freelance video editor rates",
-    "video editing career path",
-    "assistant editor salary guide",
+    "video editing compensation",
+    "industry salary trends"
   ],
   openGraph: {
-    title: "Salary & Career Growth | Assistant Video Editor",
-    description: "Comprehensive salary guide and career growth insights for assistant video editors worldwide.",
-    url: "https://assistantvideoeditor.com/jobs/salary-career",
+    title: "Assistant Video Editor Salary & Career Growth Guide (2025) | Complete Analysis",
+    description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential, career progression, and salary ranges by experience level.",
+    url: "https://assistvideoeditorjobs.com/jobs/salary-career",
     type: "article",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Salary & Career Growth Guide"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Salary & Career Growth Guide (2025)",
+    description: "Comprehensive salary guide for assistant video editors in 2025. Learn about earning potential and career progression.",
+    images: ["https://assistvideoeditorjobs.com/og.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/jobs/salary-career"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 // ========== 页面主体 ==========
@@ -570,49 +600,7 @@ export default function SalaryCareerPage() {
                     <p className="text-gray-600 dark:text-gray-400">
                       With over 12 years of experience in the video editing industry, Michael has worked with 
                       major studios including Netflix, Warner Bros., and independent production companies. 
-                      He's an Adobe Certified Professional and member of the Video Editing Association.
-                    </p>
-                  </div>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm">
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Experience</div>
-                      <div className="text-gray-600 dark:text-gray-400">12+ years</div>
-                    </div>
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Certifications</div>
-                      <div className="text-gray-600 dark:text-gray-400">Adobe Certified Pro</div>
-                    </div>
-                    <div className="bg-white dark:bg-gray-600 rounded-lg p-3">
-                      <div className="font-semibold text-gray-900 dark:text-white">Specialties</div>
-                      <div className="text-gray-600 dark:text-gray-400">Career Guidance</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Author Information */}
-      <section className="py-16 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-        <div className="container">
-          <div className="mx-auto max-w-4xl">
-            <div className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-8 border border-gray-200 dark:border-gray-600">
-              <div className="flex items-start space-x-6">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-3xl">👨‍💻</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-black dark:text-white mb-3">About the Author</h3>
-                  <div className="mb-4">
-                    <p className="text-lg text-gray-700 dark:text-gray-300 mb-2">
-                      <strong>Michael Rodriguez</strong> - Senior Video Editor & Career Consultant
-                    </p>
-                    <p className="text-gray-600 dark:text-gray-400">
-                      With over 12 years of experience in the video editing industry, Michael has worked with 
-                      major studios including Netflix, Warner Bros., and independent production companies. 
-                      He's an Adobe Certified Professional and member of the Video Editing Association.
+                      He&apos;s an Adobe Certified Professional and member of the Video Editing Association.
                     </p>
                   </div>
                   <div className="grid md:grid-cols-3 gap-4 text-sm">

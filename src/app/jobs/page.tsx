@@ -2,30 +2,131 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { jobCategories } from "@/data/site-content";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Jobs - Find Your Next Opportunity",
-  description:
-    "Browse assistant video editor jobs, freelance opportunities, remote positions, and entry-level roles. Start your video editing career today.",
+  title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
+  description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance. Apply today!",
   keywords: [
     ...siteConfig.keywords,
     "assistant video editor jobs",
     "remote video editing jobs",
     "freelance assistant editor",
     "career opportunities",
+    "video editing careers",
+    "entry level video editor jobs",
+    "video editor job search",
+    "post production jobs",
+    "media production careers",
+    "video editing employment",
+    "assistant editor positions",
+    "junior video editor jobs",
+    "video editing internships",
+    "creative industry jobs",
+    "film editing careers"
   ],
   openGraph: {
-    title: "Assistant Video Editor Jobs - Start Your Career",
-    description:
-      "Explore freelance, remote, and entry-level assistant video editor opportunities. Find the right path to grow your editing career.",
-    url: "https://yourdomain.com/jobs",
+    title: "Assistant Video Editor Jobs 2025 | Remote, Freelance & Entry-Level Positions",
+    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance.",
+    url: "https://assistvideoeditorjobs.com/jobs",
     type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og-jobs.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Assistant Video Editor Jobs - Start Your Career"
+      }
+    ]
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Assistant Video Editor Jobs 2025",
+    description: "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles.",
+    images: ["https://assistvideoeditorjobs.com/og-jobs.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/jobs"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 export default function JobsPage() {
+
+  // 生成结构化数据
+  const jobPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    "title": "Assistant Video Editor Jobs",
+    "description": "Find the best assistant video editor jobs: remote positions, freelance opportunities, entry-level roles. Updated daily with salary info and career guidance.",
+    "employmentType": ["FULL_TIME", "PART_TIME", "CONTRACTOR", "FREELANCE"],
+    "industry": "Media Production",
+    "occupationalCategory": "Video Editor",
+    "workHours": "Flexible",
+    "datePosted": new Date().toISOString(),
+    "validThrough": new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
+    "hiringOrganization": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs Platform",
+      "url": "https://assistvideoeditorjobs.com"
+    },
+    "jobLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Remote",
+        "addressCountry": "US"
+      }
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://assistvideoeditorjobs.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Jobs",
+        "item": "https://assistvideoeditorjobs.com/jobs"
+      }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="job-posting-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jobPostingSchema)
+        }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
       {/* 1. Hero Section */}
       <section className="relative pt-32 lg:pt-40 pb-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-dark dark:to-dark">
         <div className="container">
@@ -125,7 +226,7 @@ export default function JobsPage() {
                     {resource.description}
                   </p>
                   <div className="mt-6 flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform">
-                    Learn More
+                    Learn about this resource
                     <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>

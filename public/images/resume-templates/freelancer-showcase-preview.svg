@@ -1,0 +1,25 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#ecfdf5"/>
+  <rect x="20" y="20" width="260" height="160" fill="white" stroke="#10b981" stroke-width="2"/>
+  
+  <!-- Freelancer Brand -->
+  <rect x="30" y="30" width="80" height="50" fill="#10b981"/>
+  <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">FREELANCE</text>
+  <text x="40" y="65" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">VIDEO</text>
+  <text x="40" y="75" fill="white" font-family="Arial, sans-serif" font-size="10">EDITOR</text>
+  
+  <!-- Services -->
+  <text x="130" y="50" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">SERVICES</text>
+  <text x="130" y="65" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Commercial Videos</text>
+  <text x="130" y="75" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Social Media Content</text>
+  <text x="130" y="85" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Event Coverage</text>
+  
+  <!-- Client Projects -->
+  <text x="30" y="110" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">CLIENT PROJECTS</text>
+  <text x="30" y="125" fill="#374151" font-family="Arial, sans-serif" font-size="10">Tech Startup | Product Launch Video | 2023</text>
+  <text x="30" y="140" fill="#374151" font-family="Arial, sans-serif" font-size="10">Restaurant Chain | Social Media Campaign | 2023</text>
+  <text x="30" y="155" fill="#374151" font-family="Arial, sans-serif" font-size="10">Non-Profit | Fundraising Video | 2022</text>
+  
+  <!-- Contact -->
+  <text x="30" y="175" fill="#1f2937" font-family="Arial, sans-serif" font-size="10" font-weight="bold">Contact: freelancer@email.com | Portfolio: freelancer.com</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#fef2f2"/>
+  <rect x="20" y="20" width="260" height="160" fill="white" stroke="#ef4444" stroke-width="2"/>
+  
+  <!-- Entry Level Header -->
+  <rect x="30" y="30" width="240" height="40" fill="#ef4444"/>
+  <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">ALEX JOHNSON</text>
+  <text x="40" y="62" fill="white" font-family="Arial, sans-serif" font-size="12">Aspiring Video Editor</text>
+  
+  <!-- Contact -->
+  <text x="30" y="85" fill="#374151" font-family="Arial, sans-serif" font-size="10">alex.johnson@email.com | (555) 456-7890</text>
+  
+  <!-- Education Focus -->
+  <text x="30" y="105" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">EDUCATION</text>
+  <text x="30" y="120" fill="#374151" font-family="Arial, sans-serif" font-size="10">Bachelor of Arts in Digital Media | University Name | 2023</text>
+  <text x="30" y="135" fill="#374151" font-family="Arial, sans-serif" font-size="10">Relevant Coursework: Video Production, Digital Storytelling</text>
+  
+  <!-- Skills -->
+  <text x="30" y="155" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">TECHNICAL SKILLS</text>
+  <text x="30" y="170" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Adobe Premiere Pro (Beginner) • Final Cut Pro (Learning)</text>
+  <text x="30" y="185" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Photoshop (Basic) • Microsoft Office Suite</text>
+</svg>

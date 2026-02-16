@@ -3,13 +3,30 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Remote Assistant Video Editor Opportunities",
-  description: "Discover remote work opportunities for assistant video editors. Find flexible remote positions and work from anywhere in the world.",
-  keywords: [...siteConfig.keywords, "remote assistant video editor", "remote video editing", "work from home", "remote video editing jobs"],
+  title: "Remote Assistant Video Editor Jobs 2025 | Work From Home",
+  description: "Find remote assistant video editor jobs and work from home opportunities. Discover global remote positions, salary expectations, and career growth in video editing.",
+  keywords: [
+    ...siteConfig.keywords,
+    "remote assistant video editor jobs",
+    "work from home video editor assistant",
+    "remote video editing jobs",
+    "work from home video editor",
+    "remote post production jobs",
+    "virtual assistant video editor",
+    "online video editing jobs",
+    "remote media production",
+    "work from home editing",
+    "telecommute video editor",
+    "remote freelance video editor",
+    "virtual video editing assistant",
+    "remote creative jobs",
+    "work from home media jobs",
+    "remote film editing jobs"
+  ],
   openGraph: {
-    title: "Remote Assistant Video Editor Opportunities",
-    description: "Find remote work opportunities for assistant video editors. Work from anywhere with flexible schedules.",
-    url: "https://assistantvideoeditor.com/jobs/remote-assistant-video-editor",
+    title: "Remote Assistant Video Editor Jobs",
+    description: "Browse remote assistant video editor jobs. Work from home and build your editing career with global opportunities.",
+    url: "https://assistvideoeditorjobs.com/jobs/remote-assistant-video-editor",
     type: "website",
   },
 };
@@ -123,7 +140,7 @@ export default function RemoteAssistantVideoEditorPage() {
                 href="/guides/how-to-become"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-medium text-white hover:bg-primary/90 transition-all duration-300"
               >
-                Learn More
+                Learn how to become an assistant video editor
               </Link>
             </div>
           </div>

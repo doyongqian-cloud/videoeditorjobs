@@ -1,0 +1,25 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#fef3c7"/>
+  <rect x="20" y="20" width="260" height="160" fill="white" stroke="#f59e0b" stroke-width="2"/>
+  
+  <!-- Creative Header -->
+  <rect x="30" y="30" width="100" height="60" fill="#8b5cf6"/>
+  <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">CREATIVE</text>
+  <text x="40" y="65" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">EDITOR</text>
+  <text x="40" y="80" fill="white" font-family="Arial, sans-serif" font-size="10">Portfolio</text>
+  
+  <!-- Portfolio Links -->
+  <text x="150" y="50" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">PORTFOLIO</text>
+  <text x="150" y="65" fill="#374151" font-family="Arial, sans-serif" font-size="10">behance.net/creativeeditor</text>
+  <text x="150" y="80" fill="#374151" font-family="Arial, sans-serif" font-size="10">vimeo.com/creativeeditor</text>
+  
+  <!-- Skills with Icons -->
+  <text x="30" y="110" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">CREATIVE SKILLS</text>
+  <text x="30" y="125" fill="#374151" font-family="Arial, sans-serif" font-size="10">🎬 Motion Graphics • 🎨 Visual Effects • 📱 Social Media</text>
+  
+  <!-- Projects -->
+  <text x="30" y="145" fill="#1f2937" font-family="Arial, sans-serif" font-size="12" font-weight="bold">FEATURED PROJECTS</text>
+  <text x="30" y="160" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Brand Campaign Videos (500K+ views)</text>
+  <text x="30" y="175" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Music Video Productions</text>
+  <text x="30" y="185" fill="#374151" font-family="Arial, sans-serif" font-size="10">• Social Media Content</text>
+</svg>

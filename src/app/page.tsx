@@ -1,3 +1,5 @@
+'use client';
+
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
@@ -13,37 +15,55 @@ import JobPreview from "@/components/JobPreview";
 import GuidesPreview from "@/components/GuidesPreview";
 import ToolsPreview from "@/components/ToolsPreview";
 // import CTA from "@/components/CTA";
-import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import FAQSchema from "@/components/FAQ/FAQSchema";
+import { sendEvent, GA4_EVENTS } from "@/lib/analytics";
+import { useSEO } from "@/hooks/useSEO";
 
-export const metadata: Metadata = {
-  title: siteConfig.name,
-  description: siteConfig.description,
-  keywords: siteConfig.keywords,
-  openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
+const homeFAQs = [
+  {
+    question: "How long does it take to become an assistant video editor?",
+    answer: "Most people can land their first assistant video editor job within 2-4 months of focused learning and practice using our structured guides and tools."
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
+  {
+    question: "Do I need expensive equipment to start?",
+    answer: "No! You can start with just a computer and free editing software. We provide a complete list of free tools to get you started."
   },
-};
+  {
+    question: "Can I work remotely as an assistant video editor?",
+    answer: "Yes! 85% of assistant video editor positions offer remote work options, making it perfect for flexible work arrangements."
+  }
+];
 
 export default function Home() {
+  // 设置页面SEO元数据
+  useSEO({
+    title: "Assistant Video Editor Jobs & Career Guide 2025 | Find Your Next Opportunity",
+    description: "Discover assistant video editor jobs, career guides, and essential tools. Find freelance, remote, and entry-level positions. Start your video editing career today with expert guidance.",
+    keywords: siteConfig.keywords,
+    ogTitle: siteConfig.name,
+    ogDescription: siteConfig.description,
+    ogImage: siteConfig.ogImage,
+    canonical: siteConfig.url
+  });
+
+  // 跟踪首页关键交互
+  const handleCTAClick = (ctaType: string, ctaText: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'homepage_cta',
+      event_label: ctaText,
+      element_type: 'cta_button',
+      cta_type: ctaType,
+    });
+  };
+
+  const handleSectionClick = (sectionName: string, elementType: string) => {
+    sendEvent(GA4_EVENTS.CLICK, {
+      event_category: 'homepage_section',
+      event_label: sectionName,
+      element_type: elementType,
+    });
+  };
   return (
     <>
       <script
@@ -54,8 +74,8 @@ export default function Home() {
             "@type": "Organization",
             "name": "Assistant Video Editor",
             "description": "The premier platform for Assistant Video Editor careers",
-            "url": "https://assistantvideoeditor.com",
-            "logo": "https://assistantvideoeditor.com/images/logo/logo.svg",
+            "url": "https://assistvideoeditorjobs.com",
+            "logo": "https://assistvideoeditorjobs.com/images/logo/logo.svg",
             "sameAs": [
               "https://twitter.com/assistantvideoeditor",
               "https://github.com/assistantvideoeditor"
@@ -63,7 +83,7 @@ export default function Home() {
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer service",
-              "email": "support@assistantvideoeditor.com"
+              "email": "support@assistvideoeditorjobs.com"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
@@ -98,12 +118,12 @@ export default function Home() {
           })
         }}
       />
+      <FAQSchema faqs={homeFAQs} />
       <ScrollUp />
       <Hero />
-      {/* <Features /> */}
-      <JobPreview />
       <GuidesPreview />
       <ToolsPreview />
+      <JobPreview />
       {/* <CTA /> */}
       {/* <Video /> */}
       {/* <Brands /> */}

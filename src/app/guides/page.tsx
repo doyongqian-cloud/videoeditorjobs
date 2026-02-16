@@ -2,16 +2,137 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { guideCategories } from "@/data/site-content";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Assistant Video Editor Guides - Learn Everything You Need to Know",
-  description: "Comprehensive guides on becoming an assistant video editor, essential skills, resume tips, and interview preparation. Start your career journey today.",
-  keywords: [...siteConfig.keywords, "career guide", "skills", "resume", "interview"],
+  title: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
+  description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+  keywords: [
+    ...siteConfig.keywords, 
+    "career guide", 
+    "skills", 
+    "resume", 
+    "interview", 
+    "professional development", 
+    "video editing career", 
+    "job preparation",
+    "how to become video editor",
+    "video editing career path",
+    "assistant editor training",
+    "video editing skills guide",
+    "career development video editor",
+    "professional video editing guide",
+    "video editor career advice",
+    "post production career",
+    "media production career guide"
+  ],
+  openGraph: {
+    title: "Complete Assistant Video Editor Career Guide 2025 | Skills, Resume & Interview Tips",
+    description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+    url: "https://assistvideoeditorjobs.com/guides",
+    type: "website",
+    images: [
+      {
+        url: "https://assistvideoeditorjobs.com/og-guides.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Complete Assistant Video Editor Career Guide 2025"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Complete Assistant Video Editor Career Guide 2025",
+    description: "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep.",
+    images: ["https://assistvideoeditorjobs.com/og-guides.jpg"]
+  },
+  alternates: {
+    canonical: "https://assistvideoeditorjobs.com/guides"
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 };
 
 export default function GuidesPage() {
+
+  // 简化的点击处理函数（移除客户端依赖）
+  const handleGuideClick = (guideTitle: string, guideCategory: string) => {
+    // 可以添加服务端跟踪逻辑
+  };
+
+  const handleCategoryClick = (categoryName: string) => {
+    // 可以添加服务端跟踪逻辑
+  };
+
+  // 生成结构化数据
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Complete Assistant Video Editor Career Guide 2025",
+    "description": "Master your assistant video editor career: step-by-step guides, essential skills, resume templates, interview prep. Everything you need to land your dream job.",
+    "author": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs Platform"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Assistant Video Editor Jobs Platform",
+      "url": "https://assistvideoeditorjobs.com"
+    },
+    "datePublished": new Date().toISOString(),
+    "dateModified": new Date().toISOString(),
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://assistvideoeditorjobs.com/guides"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://assistvideoeditorjobs.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://assistvideoeditorjobs.com/guides"
+      }
+    ]
+  };
+
   return (
     <>
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema)
+        }}
+      />
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema)
+        }}
+      />
       {/* 1. Hero Section */}
       <section className="relative pt-32 lg:pt-40 pb-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-dark dark:to-dark">
         <div className="container">

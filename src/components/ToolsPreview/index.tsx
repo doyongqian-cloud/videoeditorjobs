@@ -28,7 +28,7 @@ const ToolCard = ({ title, description, path, isFree }: ToolCardProps) => {
           href={path}
           className="inline-flex items-center justify-center rounded-sm bg-primary px-7 py-3 text-center text-base font-medium text-white hover:bg-primary/90"
         >
-          Learn More
+          Explore this tool
           <svg
             className="ml-2 h-4 w-4"
             fill="none"
@@ -50,28 +50,34 @@ const ToolCard = ({ title, description, path, isFree }: ToolCardProps) => {
 
 const ToolsPreview = () => {
   return (
-    <section className="py-10 md:py-14 lg:py-16 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12 md:py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container">
-        <div className="mb-8 text-center">
-          <h2 className="mb-3 text-3xl font-bold text-black dark:text-white lg:text-4xl">
-            Professional Tools & Resources
+        <div className="mb-10 text-center">
+          <h2 className="mb-4 text-3xl font-bold text-black dark:text-white lg:text-4xl">
+            Get the Tools
           </h2>
           <p className="text-base text-body-color dark:text-body-color-dark">
-            Everything you need to excel in your career
+            Professional tools and resources to accelerate your career
           </p>
         </div>
         
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-3">
           <ToolCard 
-            title="Free Editing Software"
-            description="Top free tools for beginners and professionals"
-            path="/tools/free-editing-software"
+            title="AI Resume Builder"
+            description="Generate professional resumes tailored for video editor positions using AI"
+            path="/tools/ai-resume-builder"
             isFree={true}
           />
           <ToolCard 
             title="Resume Templates"
-            description="Professional templates designed for video editors"
+            description="Download professional templates designed specifically for video editors"
             path="/tools/resume-templates"
+            isFree={true}
+          />
+          <ToolCard 
+            title="Free Editing Software"
+            description="Complete list of free video editing tools for beginners and professionals"
+            path="/tools/free-editing-software"
             isFree={true}
           />
         </div>
